@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="Ambush.UserControls.DoorControls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ambush.UserControls"
+             mc:Ignorable="d" Height="677.862" Width="330" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <TextBox x:Name="Door1"  Height="28" TextAlignment="Center" FontSize="16">1</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <TextBox x:Name="Door2"  Height="28" TextAlignment="Center" FontSize="16">2</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3">
+            <TextBox x:Name="Door3"  Height="28" TextAlignment="Center" FontSize="16">3</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="4">
+            <TextBox x:Name="Door4"  Height="28" TextAlignment="Center" FontSize="16">4</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="5">
+            <TextBox x:Name="Door5"  Height="28" TextAlignment="Center" FontSize="16">5</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="6">
+            <TextBox x:Name="Door6"  Height="28" TextAlignment="Center" FontSize="16">6</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="7">
+            <TextBox x:Name="Door7"  Height="28" TextAlignment="Center" FontSize="16">7</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="8">
+            <TextBox x:Name="Door8"  Height="28" TextAlignment="Center" FontSize="16">8</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="9">
+            <TextBox x:Name="Door9"  Height="28" TextAlignment="Center" FontSize="16">9</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="10">
+            <TextBox x:Name="Door10"  Height="28" TextAlignment="Center" FontSize="16">10</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="11">
+            <TextBox x:Name="Door11"  Height="28" TextAlignment="Center" FontSize="16">11</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="12">
+            <TextBox x:Name="Door12"  Height="28" TextAlignment="Center" FontSize="16">12</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="13">
+            <TextBox x:Name="Door13"  Height="28" TextAlignment="Center" FontSize="16">13</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="14">
+            <TextBox x:Name="Door14"  Height="28" TextAlignment="Center" FontSize="16">14</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="15">
+            <TextBox x:Name="Door15"  Height="28" TextAlignment="Center" FontSize="16">15</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="16">
+            <TextBox x:Name="Door16"  Height="28" TextAlignment="Center" FontSize="16">16</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="17">
+            <TextBox x:Name="Door17"  Height="28" TextAlignment="Center" FontSize="16">17</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="18">
+            <TextBox x:Name="Door18"  Height="28" TextAlignment="Center" FontSize="16">18</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="19">
+            <TextBox x:Name="Door19"  Height="28" TextAlignment="Center" FontSize="16">19</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="20">
+            <TextBox x:Name="Door20"  Height="28" TextAlignment="Center" FontSize="16">20</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <TextBox  Height="28" TextAlignment="Center" FontSize="16" FontWeight="Bold">Door #</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2">
+            <TextBox  Height="28" TextAlignment="Center" FontSize="16">Status</TextBox>
+        </StackPanel>
+        <local:ToggleSwitch x:Name="ToggleDoor1" Grid.Column="1" Height="23" Margin="43,5,41,0" Grid.Row="1" VerticalAlignment="Top" Width="Auto" RenderTransformOrigin="1.025,0.696" MouseLeftButtonDown="ToggleDoor1_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor2" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor2_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor3" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor3_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor4" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor4_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor5" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="5" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor5_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor6" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="6" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor6_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor7" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="7" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor7_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor8" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="8" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor8_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor9" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="9" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor9_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor10" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="10" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor10_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor11" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="11" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor11_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor12" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="12" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor12_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor13" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="13" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor13_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor14" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="14" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor14_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor15" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="15" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor15_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor16" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="16" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor16_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor17" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="17" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor17_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor18" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="18" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor18_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor19" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="19" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor19_MouseLeftButtonDown"/>
+        <local:ToggleSwitch x:Name="ToggleDoor20" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="43,5,0,0" Grid.Row="20" VerticalAlignment="Top" Width="81" MouseLeftButtonDown="ToggleDoor20_MouseLeftButtonDown"/>
+
+    </Grid>
+</UserControl>
+
