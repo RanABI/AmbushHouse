@@ -9,7 +9,6 @@
         <Viewbox>
         <Grid HorizontalAlignment="Left" Height="51" Margin="0" VerticalAlignment="Top" Width="110" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
             <Rectangle x:Name="DotBackGround" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="110" RadiusY="26.833" RadiusX="26.833" Fill="#FFA0A0A0"/>
-            <Ellipse x:Name="Dot" HorizontalAlignment="Center" Height="51" VerticalAlignment="Center" Width="50" Fill="White" RenderTransformOrigin="0.493,0.5" MouseLeftButtonDown="Dot_MouseLeftButtonDown"/>
         </Grid>
         </Viewbox>
 </UserControl>

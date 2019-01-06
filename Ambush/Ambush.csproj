@@ -75,15 +75,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Client\DoorClientHandler.cs" />
     <Compile Include="Client\TCPClient.cs" />
     <Compile Include="Components\Component.cs" />
     <Compile Include="Components\CPX.cs" />
     <Compile Include="Components\Door.cs" />
     <Compile Include="Components\Target.cs" />
-    <Compile Include="Components\TargetHandler.cs" />
+    <Compile Include="Client\TargetHandler.cs" />
     <Compile Include="Server\ServerRequestHandler.cs" />
     <Compile Include="UserControls\Door.xaml.cs">
       <DependentUpon>Door.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FlippedDoor.xaml.cs">
+      <DependentUpon>FlippedDoor.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\GameSettings.xaml.cs">
       <DependentUpon>GameSettings.xaml</DependentUpon>
@@ -129,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\DoorSketch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\FlippedDoor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

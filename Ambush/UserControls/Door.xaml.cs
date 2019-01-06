@@ -27,103 +27,78 @@ namespace Ambush.UserControls
         public int doorId;
         List<CPX> CPXes;
         public DoorDirection direction;
+        public delegate void DoorStateChanged(object sender, DoorStateChangeArgs e);
+        public event DoorStateChanged OnDoorStateChange;
+        private Dictionary<DoorDirection, ToggleSwitch> toggels;
+
+
         public Door()
         {
             InitializeComponent();
+            mapToggels();
         }
 
+        private void mapToggels()
+        {
+            toggels = new Dictionary<DoorDirection, ToggleSwitch>();
+            toggels.Add(DoorDirection.Down, DOWN);
+            toggels.Add(DoorDirection.Up, UP);
+            toggels.Add(DoorDirection.Middle, MIDDLE);
+        }
 
-        public void ToggleOff()
+        public void ToggleAllOff()
         {
             if (UP.isToggled())
                 UP.Toggle();
             if (DOWN.isToggled())
                 DOWN.Toggle();
             if (MIDDLE.isToggled())
-                DOWN.Toggle();
+                MIDDLE.Toggle();
         }
 
         private void DOWN_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
-            if (DOWN.isToggled())
-            {
-                ToggleOff();
-                DOWN.checkToggled();
-                direction = DoorDirection.Middle;
-                sendRequest(DOWN.isToggled());
-            }
+            HandleToggleStateChange(DoorDirection.Down);
 
-            else
-            {
-                ToggleOff();
-                DOWN.Toggle();
-                DOWN.checkToggled();
-                direction = DoorDirection.Down;
-                sendRequest(DOWN.isToggled());
-            }
 
-            }
+        }
 
-            private void MIDDLE_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
-            {
-            if (MIDDLE.isToggled())
-            {
-                ToggleOff();
-                MIDDLE.checkToggled();
-                direction = DoorDirection.Middle;
-                sendRequest(MIDDLE.isToggled());
-            }
-            else
-            {
-                ToggleOff();
-                MIDDLE.Toggle();
-                MIDDLE.checkToggled();
-                direction = DoorDirection.Middle;
-                sendRequest(MIDDLE.isToggled());
-            }
-            }
-
-            private void UP_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
-            {
-            if (UP.isToggled())
-            {
-                ToggleOff();
-                UP.checkToggled();
-                direction = DoorDirection.Middle;
-                sendRequest(UP.isToggled());
-
-            }
-            else
-            {
-                ToggleOff();
-                UP.Toggle();
-                UP.checkToggled();
-                direction = DoorDirection.Up;
-                sendRequest(UP.isToggled());
-            }
-            }
-        public void sendRequest(bool isToggled)
+        private void MIDDLE_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
-            StringBuilder builder = new StringBuilder();
-            CPXes = MainWindow.CPXes;
-            CPX cpx = CPXes.ElementAt(0);
-            cpx = CPXes.ElementAt(cpx.getCPXbyDoorID(doorId - 1));
-            State state;
-            if (isToggled)
-                state = State.ON;
-            else state = State.OFF;
+            HandleToggleStateChange(DoorDirection.Middle);
 
-            cpx.components[(doorId - 1) % 8].state = state;
-
-            builder.Append("AR:SET:DR:");
-            builder.Append(this.doorId.ToString());
-            builder.Append(":");
-            builder.Append(direction.ToString());
-            builder.Append(":");
-            builder.Append(isToggled.ToString());
-            using (TCPClient client = new TCPClient(builder.ToString(), cpx.ID)) ;
-        }
 
         }
+
+        private void UP_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            HandleToggleStateChange(DoorDirection.Up);
+        }
+
+
+        private void HandleToggleStateChange(DoorDirection dir)
+        {
+            ToggleAllOff();
+            toggels[dir].Toggle();
+            direction = dir;
+            DoorStateChangeArgs args = new DoorStateChangeArgs();
+            args.doorId = doorId;
+            args.state = direction;
+            OnDoorStateChange(this, args);
+            // TODO replace following line with call to Client.Instance
+            //sendRequest(MIDDLE.isToggled());
+        }
+
+      
+
     }
+
+    
+
+    public class DoorStateChangeArgs: EventArgs
+    {
+        public  DoorDirection state;
+        public  int doorId;
+    }
+
 }

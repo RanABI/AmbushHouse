@@ -5,402 +5,214 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ambush.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" Width="802">
     <Grid Margin="0,0,206,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Image HorizontalAlignment="Left" Height="462" Margin="0,-12,-204,0" VerticalAlignment="Top" Width="798" OpacityMask="Black">
+        <Image HorizontalAlignment="Left" Height="462" Margin="0,-12,0,0" VerticalAlignment="Top" Width="594" OpacityMask="Black">
             <Image.Source>
 
                 <BitmapImage UriSource="file:///C:/Users/User/Desktop/sketch.png"/>
             </Image.Source>
         </Image>
-        <local:ToggleSwitch x:Name="Door2" HorizontalAlignment="Left" Height="46" Margin="145,19,0,0" VerticalAlignment="Top" Width="22"  MouseLeftButtonDown="Door2_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door2UP" HorizontalAlignment="Left" Height="46" Margin="122,0,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door2UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door2Down" HorizontalAlignment="Left" Height="46" Margin="123,40,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door2Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door3" HorizontalAlignment="Left" Height="46" Margin="262,19,0,0" VerticalAlignment="Top" Width="22"  MouseLeftButtonDown="Door3_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door3UP" HorizontalAlignment="Left" Height="46" Margin="239,0,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door3UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door3Down" HorizontalAlignment="Left" Height="46" Margin="240,40,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door3Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door5" HorizontalAlignment="Left" Height="46" Margin="23,136,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door5_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door5UP" HorizontalAlignment="Left" Height="46" Margin="0,117,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door5UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door5Down" HorizontalAlignment="Left" Height="46" Margin="1,157,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door5Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door6" HorizontalAlignment="Left" Height="46" Margin="144,136,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door6_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door6UP" HorizontalAlignment="Left" Height="46" Margin="121,117,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door6UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door6Down" HorizontalAlignment="Left" Height="46" Margin="122,157,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door6Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door7" HorizontalAlignment="Left" Height="46" Margin="262,136,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door7_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door7UP" HorizontalAlignment="Left" Height="46" Margin="239,117,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door7UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door7Down" HorizontalAlignment="Left" Height="46" Margin="240,157,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door7Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door10" HorizontalAlignment="Left" Height="46" Margin="24,254,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door10_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door10UP" HorizontalAlignment="Left" Height="46" Margin="1,236,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door10UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door10Down" HorizontalAlignment="Left" Height="46" Margin="2,276,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door10Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door11" HorizontalAlignment="Left" Height="46" Margin="145,252,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door11_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door11UP" HorizontalAlignment="Left" Height="46" Margin="122,234,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door11UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door11Down" HorizontalAlignment="Left" Height="46" Margin="123,274,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door11Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door12" HorizontalAlignment="Left" Height="46" Margin="263,253,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door12_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door12UP" HorizontalAlignment="Left" Height="46" Margin="240,234,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door12UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door12Down" HorizontalAlignment="Left" Height="46" Margin="241,274,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door12Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door15" HorizontalAlignment="Left" Height="46" Margin="24,374,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door15_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door15UP" HorizontalAlignment="Left" Height="46" Margin="2,354,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door15UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door15Down" HorizontalAlignment="Left" Height="46" Margin="2,394,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door15Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door16" HorizontalAlignment="Left" Height="46" Margin="145,374,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door16_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door16UP" HorizontalAlignment="Left" Height="46" Margin="122,354,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door16UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door16Down" HorizontalAlignment="Left" Height="46" Margin="123,394,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door16Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door17" HorizontalAlignment="Left" Height="46" Margin="264,373,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door17_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door17UP" HorizontalAlignment="Left" Height="46" Margin="240,354,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door17UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door17Down" HorizontalAlignment="Left" Height="46" Margin="242,394,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door17Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door4" HorizontalAlignment="Left" Height="46" Margin="354,19,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door4_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door4UP" HorizontalAlignment="Left" Height="46" Margin="375,0,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door4UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.112"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door4Down" HorizontalAlignment="Left" Height="46" Margin="375,37,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door4Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-89.824"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door8" HorizontalAlignment="Left" Height="46" Margin="355,136,0,0" VerticalAlignment="Top" Width="22"  MouseLeftButtonDown="Door8_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door8UP" HorizontalAlignment="Left" Height="46" Margin="376,117,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door8UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.112"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door8Down" HorizontalAlignment="Left" Height="46" Margin="376,154,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door8Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-89.824"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door13" HorizontalAlignment="Left" Height="46" Margin="358,253,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door13_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door13UP" HorizontalAlignment="Left" Height="46" Margin="379,234,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door13UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.112"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door13Down" HorizontalAlignment="Left" Height="46" Margin="379,271,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door13Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-89.824"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door18" HorizontalAlignment="Left" Height="46" Margin="356,372,0,0" VerticalAlignment="Top" Width="22"  MouseLeftButtonDown="Door18_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door18UP" HorizontalAlignment="Left" Height="46" Margin="377,353,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door18UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90.112"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door18Down" HorizontalAlignment="Left" Height="46" Margin="377,390,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door18Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-89.824"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door9" HorizontalAlignment="Left" Height="46" Margin="504,136,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door9_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door9UP" HorizontalAlignment="Left" Height="46" Margin="481,117,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door9UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door9Down" HorizontalAlignment="Left" Height="46" Margin="482,157,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door9Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door14" HorizontalAlignment="Left" Height="46" Margin="505,253,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door14_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door14UP" HorizontalAlignment="Left" Height="46" Margin="482,234,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door14UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door14Down" HorizontalAlignment="Left" Height="46" Margin="483,274,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door14Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door19" HorizontalAlignment="Left" Height="46" Margin="505,373,0,0" VerticalAlignment="Top" Width="22" MouseLeftButtonDown="Door19_MouseLeftButtonDown"/>
-        <local:ToggleSwitch x:Name="Door19UP" HorizontalAlignment="Left" Height="46" Margin="482,354,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door19UP_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-90.185"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:ToggleSwitch x:Name="Door19Down" HorizontalAlignment="Left" Height="46" Margin="483,394,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door19Down_MouseLeftButtonDown">
-            <local:ToggleSwitch.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="89.644"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </local:ToggleSwitch.RenderTransform>
-        </local:ToggleSwitch>
-        <local:Door x:Name="door1" HorizontalAlignment="Left" Height="67" Margin="9,12,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Door_MouseLeftButtonDown">
+        <local:Door x:Name="door1" HorizontalAlignment="Left" Height="67" Margin="9,12,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5">
             <local:Door.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="180.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door2" HorizontalAlignment="Left" Height="68" Margin="127,8,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door3" HorizontalAlignment="Left" Height="68" Margin="244,11,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door4" HorizontalAlignment="Left" Height="68" Margin="360,5,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="359.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door5" HorizontalAlignment="Left" Height="68" Margin="5,128,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door6" HorizontalAlignment="Left" Height="68" Margin="126,128,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door7" HorizontalAlignment="Left" Height="68" Margin="245,128,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door8" HorizontalAlignment="Left" Height="68" Margin="359,122,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="359.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door HorizontalAlignment="Left" Height="68" Margin="359,240,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="359.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door10" HorizontalAlignment="Left" Height="68" Margin="7,244,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door11" HorizontalAlignment="Left" Height="68" Margin="128,245,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door12" HorizontalAlignment="Left" Height="68" Margin="246,244,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door15" HorizontalAlignment="Left" Height="68" Margin="7,364,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door16" HorizontalAlignment="Left" Height="68" Margin="129,364,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door17" HorizontalAlignment="Left" Height="68" Margin="244,364,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door18" HorizontalAlignment="Left" Height="68" Margin="360,360,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="359.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door14" HorizontalAlignment="Left" Height="68" Margin="487,244,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door13" HorizontalAlignment="Left" Height="68" Margin="359,240,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="359.928"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door9" HorizontalAlignment="Left" Height="68" Margin="486,128,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:Door.RenderTransform>
+        </local:Door>
+        <local:Door x:Name="door19" HorizontalAlignment="Left" Height="68" Margin="487,367,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+            <local:Door.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </local:Door.RenderTransform>

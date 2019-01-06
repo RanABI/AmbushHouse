@@ -30,7 +30,7 @@ namespace Ambush.UserControls
             InitializeComponent();
             DotBackGround.Fill = Off;
             Toggled = false;
-            Dot.Margin = LeftSide;
+            //Dot.Margin = LeftSide;
         }
         
         public bool Toggled1 { get => Toggled; set => Toggled = value; }
@@ -51,13 +51,14 @@ namespace Ambush.UserControls
             {
                 DotBackGround.Fill = On;
                 Toggled = true;
-                Dot.Margin = RightSide;
+
+                //Dot.Margin = RightSide;
             }
             else
             {
                 DotBackGround.Fill = Off;
                 Toggled = false;
-                Dot.Margin = LeftSide;
+                //Dot.Margin = LeftSide;
             }
         }
 
@@ -70,10 +71,10 @@ namespace Ambush.UserControls
 
         public void checkToggled()
         {
-            if (Toggled && Dot.Margin == LeftSide)
-                Dot.Margin = RightSide;
-            else if (!Toggled && Dot.Margin == RightSide)
-                Dot.Margin = LeftSide;
+            //if (Toggled && Dot.Margin == LeftSide)
+            //    Dot.Margin = RightSide;
+            //else if (!Toggled && Dot.Margin == RightSide)
+            //    Dot.Margin = LeftSide;
         }
     }
 }

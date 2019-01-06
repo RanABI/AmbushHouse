@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using static Ambush.Enums;
 using Ambush.Utils;
 using Ambush.Components;
+using System.Media;
 
 namespace Ambush.Server
 {
@@ -79,6 +80,7 @@ namespace Ambush.Server
 
                         else
                         {
+                            
                             //Enable Sensor on GUI
                             //Raise event 
 

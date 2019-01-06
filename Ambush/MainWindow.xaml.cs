@@ -74,9 +74,6 @@ namespace Ambush
             }
         }
 
-        private void DoorSketch_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1172.191" Width="1955.337">
     <Grid>
-        <UserControls:DoorSketch HorizontalAlignment="Left" Height="493" Margin="55,10,0,0" VerticalAlignment="Top" Width="738" Loaded="DoorSketch_Loaded"/>
+        <UserControls:DoorSketch HorizontalAlignment="Left" Height="493" Margin="55,10,0,0" VerticalAlignment="Top" Width="738"/>
 
     </Grid>
 
