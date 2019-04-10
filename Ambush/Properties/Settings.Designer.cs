@@ -25,11 +25,10 @@ namespace Ambush.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\source\\repos\\Am" +
-            "bush\\Ambush\\Database\\Database.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SERVER=162.241.253.12;DATABASE=ofekafsc_AmbushDB;UID=ofekafsc_Ran;PASSWORD=123456789;")]
         public string connection_string {
             get {
-                return ((string)(this["connection_string"]));
+                return "SERVER=162.241.253.12;DATABASE=ofekafsc_AmbushDB;UID=ofekafsc_Ran;PASSWORD=123456789;";
             }
             set {
                 this["connection_string"] = value;

@@ -17,10 +17,10 @@ namespace Ambush
     {
         //Static configuration - local communication only
         public const string ip = "10.0.0.6";
-        public const int port = 8085;
+        public const int port = 8080;
         TcpListener listener;
         Thread serverThread;
-        ServerRequestHandler requestHandler;
+        ServerRequestHandler requestHandler ;
         public TCPServer()
         {
             requestHandler = new ServerRequestHandler();
@@ -36,14 +36,17 @@ namespace Ambush
                 //listener = new TcpListener(IPAddress.Parse(ip), port);
                 listener = new TcpListener(IPAddress.Any, port);
                 listener.Start();
-                Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Server Started" + "\n");
+                //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Server Started" + "\n");
                 while (true)
                 {
+
                     //Block program until a client will connect 
-                    Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Waiting for incoming client connections .... " + "\n");
+                    //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Waiting for incoming client connections .... " + "\n");
                     TcpClient client = listener.AcceptTcpClient();
-                    Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Accepted the connection .... " + "\n");
+
+                    //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Accepted the connection .... " + "\n");
                     Console.Out.WriteLine("Client CONNECTED");
+
                     //Create a new thread for the new client so the server could continue listening for incoming connections
                     Thread clientThread = new Thread(ProcessClientRequests);
                     clientThread.Start(client);
@@ -75,11 +78,13 @@ namespace Ambush
 
                 /*convert the data received into a string*/
                 string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Received : " + dataReceived + "\n");
+                //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Received : " + dataReceived + "\n");
                 Console.Out.WriteLine("CLIENT MESSAGE:" + dataReceived + "\n");
 
-                //ParseClientMessage(dataReceived);
+                string clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
 
+                //requestHandler.HandleClientRequest(dataReceived);
+                MessageBox.Show(dataReceived);
                 //write back the text to the client
                 Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Sending back : " + dataReceived + "\n");
                 nwStream.Write(buffer, 0, bytesRead);

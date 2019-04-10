@@ -15,17 +15,17 @@ namespace Ambush.Logger
             lock (_lock)
             {
 
-                using (StreamWriter streamWriter = new StreamWriter(filePath))
+                using (StreamWriter streamWriter = new StreamWriter(filePath,append: true))
                 {
                     Console.WriteLine();
                     Console.WriteLine();
-                    streamWriter.WriteLine(getTime(message));
+                    streamWriter.WriteLine(addTimeStamp(message));
                     streamWriter.Close();
                 }
 
             }
         }
-        public string getTime(string message)
+        public string addTimeStamp(string message)
         {
             StringBuilder builder = new StringBuilder();
             builder.Append(DateTime.Today.ToString("dd-MM-yyyy"));

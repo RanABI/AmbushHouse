@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ambush.CustomEventArgs;
+using Ambush.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,48 +10,60 @@ namespace Ambush.Components
 {
     public class CPX
     {
-        public int ID;
-        public string IP;
-        public int port;
+        public int id;
+        public string ip;
+        public static int port = 8085;
         public List<Component> components;
-        public const int doorNum = 5;
-
-        public CPX(int id,string ip,int idRangeStart,int idRangeEnd)
+        public MiniController miniController;
+        public bool isOn = false;
+        public CPX(int id, string ip, List<Component> components)
         {
-            this.port = 8085;
-            this.ID = id;
-            this.IP = ip;
-            components = new List<Component>();
-            int j = 0;
-            for(int i = idRangeStart; i<idRangeEnd+1;i++)
+            this.id = id;
+            this.ip = ip;
+            this.components = components;
+            this.isOn = true;
+            Utils.GlobalEvents.OnIncomingStatsMessage += updateCpxComponentsStatus;
+            //Db_Utils.ExecuteSql("INSERT INTO RPI VALUES ('" + id.ToString() + "','" + ip + "')");
+
+        }
+
+        public string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.Append("CPX id: ");
+            builder.Append(this.id.ToString());
+            builder.Append(", CPX ip : ");
+            builder.Append(this.ip.ToString());
+            builder.Append("\n");
+            foreach (Component cmp in this.components)
+                builder.Append(cmp.ToString());
+
+            return builder.ToString();
+
+        }
+        public string constructGetStatusMessage()
+        {
+            ////TODO SET RPI SCRIPT ACCORDINGLY
+            StringBuilder builder = new StringBuilder();
+            builder.Append("AR:GET:CPX:");
+            builder.Append(this.id);
+            return builder.ToString();
+        }
+
+        public void updateCpxComponentsStatus(object sender, IncomingStatsMessageArgs e)
+        {
+            string[] states = e.values;
+            string id = e.cpxID;
+            List<CPX> cPXes = Play.cPXes;
+            CPX cpx = Play.getCpxByPhysicalId(Int32.Parse(id));
+            int i = 0;
+            foreach (Component cmp in cpx.components)
             {
-                if(j < doorNum)
-                {
-                    components.Add(new Door(i,id));
-                    
-                }
-                else
-                {
-                    components.Add(new Target(i,id));
-                }
-                j++;
+                cmp.state = Utils.Conversions.stringToDirection(states[i++]);
             }
+              
         }
 
-        public int getCPXbyDoorID(int doorID)
-        {
-            if (doorID < 5)
-                return 0;
-            else if (doorID < 13)
-                return 1;
-            else if (doorID < 21)
-                return 2;
-            else if (doorID < 29)
-                return 3;
-            else if (doorID < 38)
-                return 4;
-            return 0;
-        }
 
     }
 }

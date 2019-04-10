@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Ambush.UserControls.RPIStatus"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ambush.UserControls"
+             mc:Ignorable="d" Height="66" Width="539">
+    <Grid Background="#FFB3B3B3" Margin="0,0,101,-34" RenderTransformOrigin="0.5,0.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+        <StackPanel Name="RpiButtons" Margin="30,15,-30,10" Orientation="Horizontal" >
+            <Button x:Name="rpi1"  Content="RPI1" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="76" Height="65" IsEnabled="True" />
+            <Button x:Name="rpi2" Content="RPI2" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="75" Height="65" IsEnabled="True"/>
+            <Button x:Name="rpi3" Content="RPI3" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="75" Height="65" IsEnabled="True"/>
+            <Button x:Name="rpi4" Content="RPI4" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="75" Height="65" IsEnabled="True"/>
+            <Button x:Name="rpi5" Content="RPI5" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="75" Height="65" IsEnabled="True"/>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

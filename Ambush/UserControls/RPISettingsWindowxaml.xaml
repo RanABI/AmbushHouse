@@ -1,0 +1,13 @@
+﻿<Window x:Class="Ambush.UserControls.RPISettingsWindowxaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ambush.UserControls"
+        mc:Ignorable="d"
+        Title="RPISettingsWindowxaml" Height="546.834" Width="584.077">
+    <Grid Background="#b3b3b3" HorizontalAlignment="Left" Width="588" Margin="0,-25,0,-1">
+        <local:RPISettings HorizontalAlignment="Left" Height="514" VerticalAlignment="Top" Width="556" Margin="10,10,0,0" />
+
+    </Grid>
+</Window>

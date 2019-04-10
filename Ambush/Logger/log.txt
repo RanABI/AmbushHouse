@@ -1,2 +1,2757 @@
-06-01-201919:41:53 -> Waiting for incoming client connections .... 
+27-02-201917:41:35 -> Server Started
 
+28-02-201912:41:13 -> Server Started
+
+28-02-201912:41:33 -> Server Started
+
+28-02-201912:59:20 -> Server Started
+
+28-02-201913:01:24 -> Server Started
+
+04-03-201912:09:02 -> Server Started
+
+04-03-201912:09:46 -> Server Started
+
+04-03-201912:10:41 -> Server Started
+
+04-03-201912:11:09 -> Server Started
+
+04-03-201912:11:27 -> Server Started
+
+04-03-201912:11:52 -> Server Started
+
+04-03-201912:12:34 -> Server Started
+
+04-03-201912:13:02 -> Server Started
+
+04-03-201912:13:25 -> Server Started
+
+04-03-201912:14:34 -> Server Started
+
+04-03-201912:16:41 -> Server Started
+
+04-03-201912:23:45 -> Server Started
+
+04-03-201912:31:08 -> Server Started
+
+04-03-201912:33:33 -> Server Started
+
+04-03-201912:34:02 -> Server Started
+
+04-03-201912:37:02 -> Server Started
+
+04-03-201912:37:27 -> Server Started
+
+04-03-201912:45:35 -> Server Started
+
+04-03-201912:45:52 -> Server Started
+
+04-03-201912:47:24 -> Server Started
+
+04-03-201912:47:52 -> Server Started
+
+04-03-201912:49:12 -> Server Started
+
+04-03-201912:49:50 -> Server Started
+
+04-03-201912:50:18 -> Server Started
+
+04-03-201912:50:35 -> Server Started
+
+04-03-201912:51:45 -> Server Started
+
+04-03-201912:54:46 -> Server Started
+
+04-03-201912:56:08 -> Server Started
+
+04-03-201912:57:45 -> Server Started
+
+04-03-201913:01:16 -> Server Started
+
+04-03-201913:24:59 -> Server Started
+
+04-03-201913:55:05 -> Server Started
+
+04-03-201913:55:49 -> Server Started
+
+04-03-201913:57:56 -> Server Started
+
+04-03-201914:19:04 -> Server Started
+
+04-03-201914:55:48 -> Server Started
+
+04-03-201914:57:53 -> Server Started
+
+04-03-201914:59:54 -> Server Started
+
+04-03-201915:16:16 -> Server Started
+
+04-03-201915:20:11 -> Server Started
+
+04-03-201915:21:38 -> Server Started
+
+06-03-201911:17:27 -> Server Started
+
+06-03-201911:17:27 -> Waiting for incoming client connections .... 
+
+06-03-201911:25:50 -> Server Started
+
+06-03-201911:25:50 -> Waiting for incoming client connections .... 
+
+06-03-201911:26:10 -> Server Started
+
+06-03-201911:26:10 -> Waiting for incoming client connections .... 
+
+06-03-201911:27:09 -> Server Started
+
+06-03-201911:27:09 -> Waiting for incoming client connections .... 
+
+06-03-201911:27:24 -> Server Started
+
+06-03-201911:27:24 -> Waiting for incoming client connections .... 
+
+06-03-201911:27:35 -> Server Started
+
+06-03-201911:27:35 -> Waiting for incoming client connections .... 
+
+06-03-201911:27:48 -> Server Started
+
+06-03-201911:27:48 -> Waiting for incoming client connections .... 
+
+06-03-201911:28:08 -> Server Started
+
+06-03-201911:28:08 -> Waiting for incoming client connections .... 
+
+06-03-201911:28:34 -> Server Started
+
+06-03-201911:28:34 -> Waiting for incoming client connections .... 
+
+06-03-201911:29:02 -> Server Started
+
+06-03-201911:29:02 -> Waiting for incoming client connections .... 
+
+06-03-201911:33:17 -> Server Started
+
+06-03-201911:33:17 -> Waiting for incoming client connections .... 
+
+06-03-201911:37:04 -> Server Started
+
+06-03-201911:37:04 -> Waiting for incoming client connections .... 
+
+06-03-201911:48:12 -> Server Started
+
+06-03-201911:48:12 -> Waiting for incoming client connections .... 
+
+06-03-201912:18:57 -> Server Started
+
+06-03-201912:18:57 -> Waiting for incoming client connections .... 
+
+06-03-201912:20:48 -> Server Started
+
+06-03-201912:20:48 -> Waiting for incoming client connections .... 
+
+06-03-201912:22:17 -> Server Started
+
+06-03-201912:22:17 -> Waiting for incoming client connections .... 
+
+06-03-201914:15:49 -> Server Started
+
+06-03-201914:15:49 -> Waiting for incoming client connections .... 
+
+06-03-201915:20:43 -> Server Started
+
+06-03-201915:20:43 -> Waiting for incoming client connections .... 
+
+06-03-201915:58:16 -> Server Started
+
+06-03-201915:58:16 -> Waiting for incoming client connections .... 
+
+06-03-201915:58:28 -> Server Started
+
+06-03-201915:58:28 -> Waiting for incoming client connections .... 
+
+06-03-201916:04:12 -> Server Started
+
+06-03-201916:04:12 -> Waiting for incoming client connections .... 
+
+06-03-201916:04:28 -> Server Started
+
+06-03-201916:04:28 -> Waiting for incoming client connections .... 
+
+06-03-201916:21:17 -> Server Started
+
+06-03-201916:21:17 -> Waiting for incoming client connections .... 
+
+06-03-201917:34:43 -> Server Started
+
+06-03-201917:34:43 -> Waiting for incoming client connections .... 
+
+06-03-201917:35:02 -> Server Started
+
+06-03-201917:35:02 -> Waiting for incoming client connections .... 
+
+06-03-201917:35:46 -> Server Started
+
+06-03-201917:35:46 -> Waiting for incoming client connections .... 
+
+11-03-201911:18:28 -> Server Started
+
+11-03-201911:18:28 -> Waiting for incoming client connections .... 
+
+11-03-201911:28:26 -> Waiting for incoming client connections .... 
+
+11-03-201911:28:59 -> Server Started
+
+11-03-201911:28:59 -> Waiting for incoming client connections .... 
+
+11-03-201911:29:07 -> Waiting for incoming client connections .... 
+
+11-03-201911:29:11 -> Sending back : AR:GET:DR:1
+
+11-03-201911:45:26 -> Server Started
+
+11-03-201911:45:26 -> Waiting for incoming client connections .... 
+
+11-03-201911:46:36 -> Server Started
+
+11-03-201911:46:36 -> Waiting for incoming client connections .... 
+
+11-03-201911:48:32 -> Server Started
+
+11-03-201911:48:32 -> Waiting for incoming client connections .... 
+
+11-03-201911:52:35 -> Server Started
+
+11-03-201911:52:35 -> Waiting for incoming client connections .... 
+
+11-03-201911:53:05 -> Server Started
+
+11-03-201911:53:05 -> Waiting for incoming client connections .... 
+
+11-03-201911:53:54 -> Server Started
+
+11-03-201911:53:54 -> Waiting for incoming client connections .... 
+
+11-03-201911:54:17 -> Server Started
+
+11-03-201911:54:17 -> Waiting for incoming client connections .... 
+
+11-03-201911:57:27 -> Server Started
+
+11-03-201911:57:27 -> Waiting for incoming client connections .... 
+
+11-03-201911:58:09 -> Server Started
+
+11-03-201911:58:09 -> Waiting for incoming client connections .... 
+
+11-03-201913:07:26 -> Server Started
+
+11-03-201913:07:26 -> Waiting for incoming client connections .... 
+
+11-03-201914:23:38 -> Server Started
+
+11-03-201914:23:38 -> Waiting for incoming client connections .... 
+
+11-03-201914:26:06 -> Server Started
+
+11-03-201914:26:06 -> Waiting for incoming client connections .... 
+
+11-03-201914:27:08 -> Server Started
+
+11-03-201914:27:08 -> Waiting for incoming client connections .... 
+
+12-03-201910:28:04 -> Server Started
+
+12-03-201910:28:04 -> Waiting for incoming client connections .... 
+
+12-03-201910:28:32 -> Server Started
+
+12-03-201910:28:32 -> Waiting for incoming client connections .... 
+
+12-03-201910:28:48 -> Server Started
+
+12-03-201910:28:48 -> Waiting for incoming client connections .... 
+
+12-03-201910:31:26 -> Server Started
+
+12-03-201910:31:26 -> Waiting for incoming client connections .... 
+
+12-03-201910:33:09 -> Server Started
+
+12-03-201910:33:09 -> Waiting for incoming client connections .... 
+
+12-03-201910:33:37 -> Server Started
+
+12-03-201910:33:37 -> Waiting for incoming client connections .... 
+
+12-03-201915:40:06 -> Server Started
+
+12-03-201915:40:06 -> Waiting for incoming client connections .... 
+
+12-03-201915:41:07 -> Server Started
+
+12-03-201915:41:07 -> Waiting for incoming client connections .... 
+
+12-03-201915:42:11 -> Server Started
+
+12-03-201915:42:11 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:49 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:50 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:51 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:52 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:53 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:54 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:55 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:56 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:57 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:58 -> Waiting for incoming client connections .... 
+
+12-03-201915:44:59 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:00 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:01 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:02 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:03 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:04 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:05 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:06 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:07 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:08 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:09 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:10 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:11 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:12 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:13 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:14 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:15 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:16 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:17 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:18 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:19 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:20 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:21 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:22 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:23 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:24 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:25 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:26 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:27 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:28 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:29 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:30 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:31 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:32 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:33 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:34 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:35 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:36 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:37 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:38 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:39 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:40 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:41 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:42 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:43 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:44 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:45 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:46 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:47 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:48 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:49 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:50 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:51 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:52 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:53 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:54 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:55 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:56 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:57 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:58 -> Waiting for incoming client connections .... 
+
+12-03-201915:45:59 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:00 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:01 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:03 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:04 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:05 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:06 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:07 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:08 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:09 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:10 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:11 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:12 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:13 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:14 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:15 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:16 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:17 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:18 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:19 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:20 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:21 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:22 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:23 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:24 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:25 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:26 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:27 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:28 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:29 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:30 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:31 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:32 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:33 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:34 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:35 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:36 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:37 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:38 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:39 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:40 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:41 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:42 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:43 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:44 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:45 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:46 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:47 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:48 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:49 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:50 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:51 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:52 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:53 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:54 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:55 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:56 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:57 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:58 -> Waiting for incoming client connections .... 
+
+12-03-201915:46:59 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:00 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:01 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:02 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:03 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:04 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:05 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:06 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:07 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:08 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:09 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:50 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:51 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:52 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:53 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:54 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:55 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:56 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:57 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:58 -> Waiting for incoming client connections .... 
+
+12-03-201915:47:59 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:00 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:01 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:02 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:03 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:04 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:05 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:06 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:07 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:08 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:09 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:10 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:11 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:12 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:13 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:14 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:15 -> Sending back : AR,D1,25,Laser Cross number: 0
+
+12-03-201915:48:15 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:16 -> Sending back : AR,D1,26,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,24,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,23,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,22,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,21,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,20,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,19,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,18,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,17,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,16,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,15,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,14,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,13,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,12,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,11,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,10,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,9,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,8,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,7,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,6,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,5,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,4,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,3,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,2,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,1,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,140,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,139,Laser Cross number: 0
+
+12-03-201915:48:16 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:16 -> Sending back : AR,D1,138,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,27,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,137,Laser Cross number: 0
+
+12-03-201915:48:16 -> Sending back : AR,D1,136,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,135,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,134,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,133,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,132,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,131,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,130,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,129,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,128,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,127,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,126,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,125,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,124,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,123,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,122,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,121,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,120,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,119,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,118,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,117,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,116,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,115,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,114,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,113,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,112,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,111,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,110,Laser Cross number: 0
+
+12-03-201915:48:17 -> Waiting for incoming client connections .... 
+
+12-03-201915:48:17 -> Sending back : AR,D1,28,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,108,Laser Cross number: 0
+
+12-03-201915:48:17 -> Sending back : AR,D1,107,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,106,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,105,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,104,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,103,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,102,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,101,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,100,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,99,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,98,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,97,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,96,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,95,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,94,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,93,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,92,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,91,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,90,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,89,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,88,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,87,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,86,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,85,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,84,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,83,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,82,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,81,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,80,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,29,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,79,Laser Cross number: 0
+
+12-03-201915:48:18 -> Sending back : AR,D1,78,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,77,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,76,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,75,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,74,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,73,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,72,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,71,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,70,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,69,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,68,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,67,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,66,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,65,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,64,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,63,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,62,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,61,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,60,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,59,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,58,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,57,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,56,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,55,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,54,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,53,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,52,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,51,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,50,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,49,Laser Cross number: 0
+
+12-03-201915:48:19 -> Sending back : AR,D1,48,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,47,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,46,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,45,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,44,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,43,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,42,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,41,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,40,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,39,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,38,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,37,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,36,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,35,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,34,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,33,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,32,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,31,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,30,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,29,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,28,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,27,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,26,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,25,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,24,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,23,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,22,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,21,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,20,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,19,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,18,Laser Cross number: 0
+
+12-03-201915:48:20 -> Sending back : AR,D1,17,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,16,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,15,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,14,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,13,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,12,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,11,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,10,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,9,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,8,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,7,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,6,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,5,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,4,Laser Cross number: 0
+
+12-03-201915:48:21 -> Sending back : AR,D1,3,Laser Cross number: 0
+
+12-03-201915:48:22 -> Sending back : AR,D1,2,Laser Cross number: 0
+
+12-03-201915:48:22 -> Sending back : AR,D1,1,Laser Cross number: 0
+
+12-03-201917:03:42 -> Server Started
+
+12-03-201917:03:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:26 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:26 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:26 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:26 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:33 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:39 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:40 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:41 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:43 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:44 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:45 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:48 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:49 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:54 -> Sending back : AR,D1,260,0
+
+12-03-201917:05:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Sending back : AR,D1,265,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,264,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,263,0
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Sending back : AR,D1,262,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,266,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,261,0
+
+12-03-201917:05:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:05:55 -> Sending back : AR,D1,267,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,258,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,257,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,268,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,256,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,255,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,254,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,253,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,252,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,251,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,250,0
+
+12-03-201917:05:55 -> Sending back : AR,D1,249,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,248,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,247,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,246,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,245,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,244,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,243,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,242,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,241,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,240,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,239,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,238,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,237,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,236,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,235,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,234,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,233,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,232,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,231,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,230,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,229,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,228,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,227,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,226,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,225,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,224,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,223,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,222,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,221,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,220,0
+
+12-03-201917:05:56 -> Sending back : AR,D1,219,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,218,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,217,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,216,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,215,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,214,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,213,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,212,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,211,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,210,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,209,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,208,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,207,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,206,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,205,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,204,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,203,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,202,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,201,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,200,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,199,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,198,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,197,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,196,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,195,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,194,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,193,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,192,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,191,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,190,0
+
+12-03-201917:05:57 -> Sending back : AR,D1,189,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,188,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,187,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,186,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,185,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,184,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,183,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,182,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,181,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,180,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,179,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,178,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,177,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,176,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,175,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,174,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,173,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,172,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,171,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,170,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,169,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,168,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,167,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,166,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,165,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,164,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,163,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,162,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,161,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,160,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,159,0
+
+12-03-201917:05:58 -> Sending back : AR,D1,158,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,157,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,156,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,155,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,154,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,153,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,152,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,151,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,150,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,149,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,148,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,147,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,146,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,145,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,144,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,143,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,142,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,141,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,140,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,139,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,138,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,137,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,136,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,135,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,134,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,133,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,132,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,131,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,130,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,129,0
+
+12-03-201917:05:59 -> Sending back : AR,D1,128,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,127,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,126,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,125,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,124,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,123,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,122,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,121,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,120,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,119,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,118,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,117,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,116,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,115,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,114,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,113,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,112,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,111,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,110,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,109,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,108,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,107,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,106,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,105,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,104,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,103,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,102,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,101,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,100,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,99,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,98,0
+
+12-03-201917:06:00 -> Sending back : AR,D1,97,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,96,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,95,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,94,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,93,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,92,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,91,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,90,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,89,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,88,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,87,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,86,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,85,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,84,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,83,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,82,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,81,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,80,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,79,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,78,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,77,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,76,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,75,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,74,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,73,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,72,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,71,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,70,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,69,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,68,0
+
+12-03-201917:06:01 -> Sending back : AR,D1,67,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,66,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,65,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,64,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,63,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,62,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,61,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,60,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,59,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,58,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,57,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,56,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,55,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,54,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,53,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,52,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,51,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,50,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,49,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,48,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,47,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,46,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,45,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,44,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,43,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,42,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,41,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,40,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,39,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,38,0
+
+12-03-201917:06:02 -> Sending back : AR,D1,37,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,36,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,35,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,34,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,33,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,32,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,31,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,30,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,29,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,28,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,27,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,26,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,25,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,24,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,23,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,22,0
+
+12-03-201917:06:03 -> Sending back : AR,D1,21,0
+
+12-03-201917:06:04 -> Sending back : AR,D1,20,0
+
+12-03-201917:06:05 -> Sending back : AR,D1,19,0
+
+12-03-201917:06:05 -> Sending back : AR,D1,18,0
+
+12-03-201917:06:05 -> Sending back : AR,D1,17,0
+
+12-03-201917:06:05 -> Sending back : AR,D1,16,0
+
+12-03-201917:06:06 -> Sending back : AR,D1,15,0
+
+12-03-201917:06:06 -> Sending back : AR,D1,14,0
+
+12-03-201917:06:06 -> Sending back : AR,D1,13,0
+
+12-03-201917:06:06 -> Sending back : AR,D1,12,0
+
+12-03-201917:06:06 -> Sending back : AR,D1,11,0
+
+12-03-201917:06:07 -> Sending back : AR,D1,10,0
+
+12-03-201917:06:07 -> Sending back : AR,D1,9,0
+
+12-03-201917:06:07 -> Sending back : AR,D1,8,0
+
+12-03-201917:06:07 -> Sending back : AR,D1,7,0
+
+12-03-201917:06:07 -> Sending back : AR,D1,6,0
+
+12-03-201917:06:08 -> Sending back : AR,D1,5,0
+
+12-03-201917:06:08 -> Sending back : AR,D1,4,0
+
+12-03-201917:06:08 -> Sending back : AR,D1,3,0
+
+12-03-201917:06:09 -> Sending back : AR,D1,2,0
+
+12-03-201917:06:09 -> Sending back : AR,D1,1,0
+
+12-03-201917:12:57 -> Server Started
+
+12-03-201917:12:57 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:04 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:05 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:06 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:07 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:08 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:09 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:10 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:11 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:12 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:13 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:14 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:14 -> Sending back : AR,D1,11,Laser Cross number: 0
+
+12-03-201917:13:15 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:15 -> Sending back : AR,D1,12,Laser Cross number: 0
+
+12-03-201917:13:16 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:16 -> Sending back : AR,D1,13,Laser Cross number: 0
+
+12-03-201917:13:17 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:18 -> Sending back : AR,D1,14,Laser Cross number: 0
+
+12-03-201917:13:18 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:18 -> Sending back : AR,D1,15,Laser Cross number: 0
+
+12-03-201917:13:19 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:19 -> Sending back : AR,D1,16,Laser Cross number: 0
+
+12-03-201917:13:20 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:20 -> Sending back : AR,D1,17,Laser Cross number: 0
+
+12-03-201917:13:21 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:21 -> Sending back : AR,D1,18,Laser Cross number: 0
+
+12-03-201917:13:22 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:22 -> Sending back : AR,D1,19,Laser Cross number: 0
+
+12-03-201917:13:22 -> Sending back : AR,D1,10,Laser Cross number: 0
+
+12-03-201917:13:23 -> Sending back : AR,D1,9,Laser Cross number: 0
+
+12-03-201917:13:23 -> Sending back : AR,D1,8,Laser Cross number: 0
+
+12-03-201917:13:24 -> Sending back : AR,D1,7,Laser Cross number: 0
+
+12-03-201917:13:25 -> Sending back : AR,D1,6,Laser Cross number: 0
+
+12-03-201917:13:25 -> Sending back : AR,D1,5,Laser Cross number: 0
+
+12-03-201917:13:25 -> Sending back : AR,D1,4,Laser Cross number: 0
+
+12-03-201917:13:25 -> Sending back : AR,D1,3,Laser Cross number: 0
+
+12-03-201917:13:26 -> Sending back : AR,D1,2,Laser Cross number: 0
+
+12-03-201917:13:27 -> Sending back : AR,D1,1,Laser Cross number: 0
+
+12-03-201917:13:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:29 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:31 -> Sending back : AR,D1,21,Laser Cross number: 1
+
+12-03-201917:13:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:34 -> Sending back : AR,D1,22,Laser Cross number: 6
+
+12-03-201917:13:34 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:37 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:38 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:47 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:56 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:57 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:58 -> Waiting for incoming client connections .... 
+
+12-03-201917:13:59 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:00 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:01 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:02 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:03 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:03 -> Sending back : AR,D1,39,Laser Cross number: 0
+
+12-03-201917:14:03 -> Sending back : AR,D1,38,Laser Cross number: 0
+
+12-03-201917:14:04 -> Sending back : AR,D1,37,Laser Cross number: 0
+
+12-03-201917:14:04 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:04 -> Sending back : AR,D1,40,Laser Cross number: 0
+
+12-03-201917:14:04 -> Sending back : AR,D1,36,Laser Cross number: 0
+
+12-03-201917:14:04 -> Sending back : AR,D1,35,Laser Cross number: 0
+
+12-03-201917:14:04 -> Sending back : AR,D1,34,Laser Cross number: 0
+
+12-03-201917:14:05 -> Sending back : AR,D1,33,Laser Cross number: 0
+
+12-03-201917:14:05 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:05 -> Sending back : AR,D1,41,Laser Cross number: 0
+
+12-03-201917:14:05 -> Sending back : AR,D1,32,Laser Cross number: 0
+
+12-03-201917:14:05 -> Sending back : AR,D1,31,Laser Cross number: 0
+
+12-03-201917:14:05 -> Sending back : AR,D1,30,Laser Cross number: 2
+
+12-03-201917:14:06 -> Sending back : AR,D1,29,Laser Cross number: 4
+
+12-03-201917:14:06 -> Sending back : AR,D1,28,Laser Cross number: 0
+
+12-03-201917:14:06 -> Sending back : AR,D1,27,Laser Cross number: 0
+
+12-03-201917:14:07 -> Sending back : AR,D1,26,Laser Cross number: 1
+
+12-03-201917:14:07 -> Sending back : AR,D1,25,Laser Cross number: 1
+
+12-03-201917:14:07 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:09 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:11 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:12 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:13 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:14 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:18 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:21 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:22 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:23 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:25 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:26 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:27 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:30 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:31 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:32 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:33 -> Sending back : AR,D1,58,Laser Cross number: 1
+
+12-03-201917:14:33 -> Sending back : AR,D1,57,Laser Cross number: 0
+
+12-03-201917:14:35 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:36 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:42 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:46 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:50 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:50 -> Sending back : AR,D1,63,Laser Cross number: 6
+
+12-03-201917:14:51 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:51 -> Sending back : AR,D1,64,Laser Cross number: 0
+
+12-03-201917:14:51 -> Sending back : AR,D1,62,Laser Cross number: 7
+
+12-03-201917:14:51 -> Sending back : AR,D1,61,Laser Cross number: 7
+
+12-03-201917:14:51 -> Sending back : AR,D1,60,Laser Cross number: 0
+
+12-03-201917:14:52 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:52 -> Sending back : AR,D1,65,Laser Cross number: 0
+
+12-03-201917:14:52 -> Sending back : AR,D1,59,Laser Cross number: 0
+
+12-03-201917:14:52 -> Sending back : AR,D1,56,Laser Cross number: 0
+
+12-03-201917:14:52 -> Sending back : AR,D1,55,Laser Cross number: 3
+
+12-03-201917:14:52 -> Sending back : AR,D1,54,Laser Cross number: 3
+
+12-03-201917:14:53 -> Sending back : AR,D1,53,Laser Cross number: 5
+
+12-03-201917:14:53 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:53 -> Sending back : AR,D1,66,Laser Cross number: 0
+
+12-03-201917:14:53 -> Sending back : AR,D1,52,Laser Cross number: 4
+
+12-03-201917:14:53 -> Sending back : AR,D1,51,Laser Cross number: 5
+
+12-03-201917:14:53 -> Sending back : AR,D1,50,Laser Cross number: 5
+
+12-03-201917:14:53 -> Sending back : AR,D1,49,Laser Cross number: 6
+
+12-03-201917:14:53 -> Sending back : AR,D1,48,Laser Cross number: 6
+
+12-03-201917:14:54 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:55 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:56 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:57 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:58 -> Waiting for incoming client connections .... 
+
+12-03-201917:14:59 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:00 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:01 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:02 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:03 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:04 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:05 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:06 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:07 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:10 -> Sending back : AR,D1,80,Laser Cross number: 0
+
+12-03-201917:15:10 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:11 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:12 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:16 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:17 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:18 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:24 -> Sending back : AR,D1,86,Laser Cross number: 0
+
+12-03-201917:15:24 -> Sending back : AR,D1,85,Laser Cross number: 0
+
+12-03-201917:15:24 -> Sending back : AR,D1,84,Laser Cross number: 0
+
+12-03-201917:15:25 -> Sending back : AR,D1,83,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,82,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,81,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,79,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,78,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,77,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,76,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,75,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,74,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,73,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,72,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,71,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,70,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,69,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,68,Laser Cross number: 0
+
+12-03-201917:15:26 -> Sending back : AR,D1,67,Laser Cross number: 0
+
+12-03-201917:15:27 -> Sending back : AR,D1,47,Laser Cross number: 6
+
+12-03-201917:15:28 -> Sending back : AR,D1,46,Laser Cross number: 6
+
+12-03-201917:15:28 -> Sending back : AR,D1,45,Laser Cross number: 5
+
+12-03-201917:15:28 -> Sending back : AR,D1,44,Laser Cross number: 4
+
+12-03-201917:15:28 -> Sending back : AR,D1,43,Laser Cross number: 4
+
+12-03-201917:15:28 -> Sending back : AR,D1,42,Laser Cross number: 3
+
+12-03-201917:15:28 -> Waiting for incoming client connections .... 
+
+12-03-201917:15:29 -> Sending back : AR,D1,87,Laser Cross number: 0
+
+12-03-201917:15:29 -> Sending back : AR,D1,24,Laser Cross number: 1
+
+12-03-201917:15:32 -> Sending back : AR,D1,88,Laser Cross number: 0
+
+12-03-201917:15:33 -> Sending back : AR,D1,23,Laser Cross number: 1
+
+12-03-201917:15:37 -> Sending back : AR,D1,20,Laser Cross number: 5
+
+13-03-201910:49:16 -> Server Started
+
+13-03-201910:49:16 -> Waiting for incoming client connections .... 
+
+13-03-201910:51:37 -> Server Started
+
+13-03-201910:51:37 -> Waiting for incoming client connections .... 
+
+13-03-201910:57:44 -> Server Started
+
+13-03-201910:57:44 -> Waiting for incoming client connections .... 
+
+13-03-201911:03:35 -> Server Started
+
+13-03-201911:03:35 -> Waiting for incoming client connections .... 
+
+13-03-201917:27:22 -> Server Started
+
+13-03-201917:27:22 -> Waiting for incoming client connections .... 
+
+13-03-201917:42:43 -> Server Started
+
+13-03-201917:42:43 -> Waiting for incoming client connections .... 
+
+13-03-201917:51:45 -> Server Started
+
+13-03-201917:51:45 -> Waiting for incoming client connections .... 
+
+13-03-201917:52:19 -> Server Started
+
+13-03-201917:52:19 -> Waiting for incoming client connections .... 
+
+13-03-201917:52:30 -> Server Started
+
+13-03-201917:52:30 -> Waiting for incoming client connections .... 
+
+13-03-201917:55:32 -> Server Started
+
+13-03-201917:55:32 -> Waiting for incoming client connections .... 
+
+13-03-201917:57:09 -> Server Started
+
+13-03-201917:57:09 -> Waiting for incoming client connections .... 
+
+13-03-201917:58:29 -> Server Started
+
+13-03-201917:58:29 -> Waiting for incoming client connections .... 
+
+13-03-201917:58:50 -> Server Started
+
+13-03-201917:58:50 -> Waiting for incoming client connections .... 
+
+13-03-201917:59:22 -> Server Started
+
+13-03-201917:59:22 -> Waiting for incoming client connections .... 
+
+13-03-201918:02:44 -> Server Started
+
+13-03-201918:02:44 -> Waiting for incoming client connections .... 
+
+13-03-201918:03:04 -> Server Started
+
+13-03-201918:03:04 -> Waiting for incoming client connections .... 
+
+13-03-201918:04:21 -> Server Started
+
+13-03-201918:04:21 -> Waiting for incoming client connections .... 
+
+13-03-201918:06:09 -> Server Started
+
+13-03-201918:06:09 -> Waiting for incoming client connections .... 
+
+13-03-201918:06:51 -> Server Started
+
+13-03-201918:06:51 -> Waiting for incoming client connections .... 
+
+13-03-201918:12:08 -> Server Started
+
+13-03-201918:12:08 -> Waiting for incoming client connections .... 
+
+13-03-201918:13:21 -> Server Started
+
+13-03-201918:13:21 -> Waiting for incoming client connections .... 
+
+13-03-201918:34:29 -> Server Started
+
+13-03-201918:34:29 -> Waiting for incoming client connections .... 
+
+13-03-201918:36:40 -> Server Started
+
+13-03-201918:36:40 -> Waiting for incoming client connections .... 
+
+13-03-201918:39:34 -> Server Started
+
+13-03-201918:39:34 -> Waiting for incoming client connections .... 
+
+13-03-201918:52:16 -> Server Started
+
+13-03-201918:52:16 -> Waiting for incoming client connections .... 
+
+13-03-201918:57:25 -> Server Started
+
+13-03-201918:57:25 -> Waiting for incoming client connections .... 
+
+13-03-201919:16:51 -> Server Started
+
+13-03-201919:16:51 -> Waiting for incoming client connections .... 
+
+13-03-201919:18:10 -> Server Started
+
+13-03-201919:18:10 -> Waiting for incoming client connections .... 
+
+13-03-201919:18:49 -> Server Started
+
+13-03-201919:18:49 -> Waiting for incoming client connections .... 
+
+18-03-201909:59:59 -> Server Started
+
+18-03-201909:59:59 -> Waiting for incoming client connections .... 
+
+18-03-201910:31:19 -> Server Started
+
+18-03-201910:31:19 -> Waiting for incoming client connections .... 
+
+18-03-201911:09:46 -> Server Started
+
+18-03-201911:09:46 -> Waiting for incoming client connections .... 
+
+18-03-201912:20:33 -> Server Started
+
+18-03-201912:20:33 -> Waiting for incoming client connections .... 
+
+18-03-201912:23:09 -> Server Started
+
+18-03-201912:23:09 -> Waiting for incoming client connections .... 
+
+18-03-201912:28:52 -> Server Started
+
+18-03-201912:28:52 -> Waiting for incoming client connections .... 
+
+18-03-201912:30:07 -> Server Started
+
+18-03-201912:30:07 -> Waiting for incoming client connections .... 
+
+18-03-201912:30:57 -> Server Started
+
+18-03-201912:30:57 -> Waiting for incoming client connections .... 
+
+18-03-201912:37:40 -> Server Started
+
+18-03-201912:37:40 -> Waiting for incoming client connections .... 
+
+18-03-201912:41:50 -> Server Started
+
+18-03-201912:41:50 -> Waiting for incoming client connections .... 
+
+18-03-201913:18:33 -> Server Started
+
+18-03-201913:18:33 -> Waiting for incoming client connections .... 
+
+18-03-201913:24:03 -> Server Started
+
+18-03-201913:24:03 -> Waiting for incoming client connections .... 
+
+18-03-201913:25:00 -> Server Started
+
+18-03-201913:25:00 -> Waiting for incoming client connections .... 
+
+18-03-201913:41:42 -> Server Started
+
+18-03-201913:41:42 -> Waiting for incoming client connections .... 
+
+18-03-201913:48:55 -> Server Started
+
+18-03-201913:48:55 -> Waiting for incoming client connections .... 
+
+18-03-201913:55:03 -> Server Started
+
+18-03-201913:55:03 -> Waiting for incoming client connections .... 
+
+18-03-201914:29:56 -> Server Started
+
+18-03-201914:29:56 -> Waiting for incoming client connections .... 
+
+18-03-201914:30:27 -> Server Started
+
+18-03-201914:30:27 -> Waiting for incoming client connections .... 
+
+18-03-201915:19:06 -> Server Started
+
+18-03-201915:19:06 -> Waiting for incoming client connections .... 
+
+18-03-201915:19:48 -> Server Started
+
+18-03-201915:19:48 -> Waiting for incoming client connections .... 
+
+18-03-201915:24:28 -> Server Started
+
+18-03-201915:24:28 -> Waiting for incoming client connections .... 
+
+18-03-201915:25:19 -> Server Started
+
+18-03-201915:25:19 -> Waiting for incoming client connections .... 
+
+18-03-201915:26:14 -> Server Started
+
+18-03-201915:26:14 -> Waiting for incoming client connections .... 
+
+18-03-201915:27:10 -> Server Started
+
+18-03-201915:27:10 -> Waiting for incoming client connections .... 
+
+18-03-201915:28:17 -> Server Started
+
+18-03-201915:28:17 -> Waiting for incoming client connections .... 
+
+18-03-201915:31:52 -> Server Started
+
+18-03-201915:31:52 -> Waiting for incoming client connections .... 
+
+18-03-201916:19:18 -> Server Started
+
+18-03-201916:19:18 -> Waiting for incoming client connections .... 
+
+18-03-201916:19:52 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:19:52 -> Transmitting.....
+
+18-03-201916:20:37 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:20:37 -> Transmitting.....
+
+18-03-201916:20:37 -> Server Started
+
+18-03-201916:20:37 -> Waiting for incoming client connections .... 
+
+18-03-201916:22:13 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:22:13 -> Transmitting.....
+
+18-03-201916:22:50 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:22:50 -> Transmitting.....
+
+18-03-201916:24:05 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:24:05 -> Transmitting.....
+
+18-03-201916:24:31 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:24:31 -> Transmitting.....
+
+18-03-201916:24:55 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:24:55 -> Transmitting.....
+
+18-03-201916:25:50 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:25:50 -> Transmitting.....
+
+18-03-201916:25:50 -> Server Started
+
+18-03-201916:25:50 -> Waiting for incoming client connections .... 
+
+18-03-201916:26:38 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:26:38 -> Transmitting.....
+
+18-03-201916:26:38 -> Server Started
+
+18-03-201916:26:38 -> Waiting for incoming client connections .... 
+
+18-03-201916:26:58 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:26:58 -> Transmitting.....
+
+18-03-201916:27:40 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:27:40 -> Transmitting.....
+
+18-03-201916:28:00 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:28:00 -> Transmitting.....
+
+18-03-201916:28:00 -> Server Started
+
+18-03-201916:28:00 -> Waiting for incoming client connections .... 
+
+18-03-201916:30:03 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:30:03 -> Transmitting.....
+
+18-03-201916:30:20 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:30:20 -> Transmitting.....
+
+18-03-201916:31:00 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:31:00 -> Transmitting.....
+
+18-03-201916:31:00 -> Server Started
+
+18-03-201916:31:00 -> Waiting for incoming client connections .... 
+
+18-03-201916:31:57 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:31:57 -> Transmitting.....
+
+18-03-201916:32:29 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:32:29 -> Transmitting.....
+
+18-03-201916:32:48 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:32:48 -> Transmitting.....
+
+18-03-201916:34:22 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:36:09 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:37:26 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:39:38 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:40:25 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:40:43 -> Client System.Net.Sockets.TcpClient connected
+18-03-201916:41:10 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:00:15 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:00:49 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:01:47 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:02:37 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:02:58 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:09:39 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:18:33 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:18:58 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:20:51 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:21:35 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:24:21 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:27:00 -> Client System.Net.Sockets.TcpClient connected
+18-03-201917:28:28 -> Client System.Net.Sockets.TcpClient connected
+20-03-201917:04:19 -> Client System.Net.Sockets.TcpClient connected
+21-03-201913:38:40 -> Sending back : AR:SER:D01:11:11110111
+
+21-03-201913:38:47 -> Sending back : AR:SER:D01:11:11110111
+
+21-03-201916:13:04 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:04 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:06 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:06 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:06 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:07 -> Sending back : AR:SER:D0:0:00000000
+
+21-03-201916:13:07 -> Sending back : AR:SER:D0:0:00000000
+
+24-03-201912:23:15 -> Sending back : AR:SER:D0:1:00000000
+
+24-03-201912:23:18 -> Sending back : 
+
+27-03-201917:15:13 -> 27/03/2019 17:15:13 :Door#2 -SET:SUCCESS:
+27-03-201917:29:25 -> 27/03/2019 17:29:25 :Door#2 -SET:3:
+27-03-201918:01:32 -> 27/03/2019 18:01:32 :Door#2 -SET:3:
+27-03-201918:02:40 -> 27/03/2019 18:02:40 :Door#2 -SET:3:
+10-04-201911:11:38 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:12:47 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:13:28 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:14:58 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:16:08 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:16:09 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:16:17 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:16:51 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:17:19 -> Client System.Net.Sockets.TcpClient connected
+10-04-201911:34:49 -> Client System.Net.Sockets.TcpClient connected
+10-04-201912:35:56 -> 10/04/2019 12:35:56 :Door#1 -SET:3:
+10-04-201912:41:15 -> 10/04/2019 12:41:15 :Door#2 -SET:3:
+10-04-201912:43:41 -> 10/04/2019 12:43:41 :Door#2 -SET:1:
+10-04-201912:51:11 -> 10/04/2019 12:51:11 :Door#2 -SET:3:
+10-04-201913:19:44 -> 10/04/2019 13:19:44 :Door#2 -SET:3:
+10-04-201913:28:45 -> 10/04/2019 13:28:45 :Door#2 -SET:1:

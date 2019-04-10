@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Ambush.UserControls
 {
     /// <summary>
-    /// Interaction logic for OpenButton.xaml
+    /// Interaction logic for RPISettingsWindowxaml.xaml
     /// </summary>
-    public partial class OpenButton : UserControl
+    public partial class RPISettingsWindowxaml : Window
     {
-        public OpenButton()
+        public RPISettingsWindowxaml()
         {
             InitializeComponent();
         }
+
     }
 }

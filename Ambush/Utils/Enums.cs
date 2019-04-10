@@ -9,8 +9,7 @@ namespace Ambush
     public class Enums
     {
         public enum State { OFF, ON }
-        public enum MsgVars:int {  Action=1 , Component , Id , Answer }
-
-        public enum DoorDirection { None,Up,Middle,Down}
+        public enum MsgVars:int {  Action=1 , Component , VirtualId , Answer ,State,PhysicalId}
+        public enum Direction { None = 0,Up,Middle,Down}
     }
 }

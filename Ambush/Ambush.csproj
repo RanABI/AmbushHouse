@@ -50,17 +50,43 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Device.Net, Version=2.7.0.0, Culture=neutral, PublicKeyToken=918542c6e3a3318a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Device.Net.2.7.0\lib\net45\Device.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Device.Net.LibUsb, Version=2.7.0.0, Culture=neutral, PublicKeyToken=918542c6e3a3318a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Device.Net.LibUsb.2.7.0\lib\netstandard2.0\Device.Net.LibUsb.dll</HintPath>
+    </Reference>
     <Reference Include="EasyModbus, Version=5.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyModbusTCP.5.5.0\lib\EasyModbus.dll</HintPath>
     </Reference>
+    <Reference Include="LibUsbDotNet.LibUsbDotNet, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c677239abe1e02a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibUsbDotNet.2.2.29\lib\net45\LibUsbDotNet.LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\quickdmx\sourceCode\Sources\QuickDmx.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Proxymity.QuickDmx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\quickdmx\sourceCode\Sources\QuickDmx.Tests\bin\Debug\Proxymity.QuickDmx.dll</HintPath>
+    </Reference>
+    <Reference Include="Proxymity.QuickDmx.Tests, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\quickdmx\sourceCode\Sources\QuickDmx.Tests\bin\Debug\Proxymity.QuickDmx.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="Sniper.Lighting.DMX">
+      <HintPath>..\..\..\..\Downloads\Sniper.Lighting.Dmx-master\bin\Debug\Sniper.Lighting.DMX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
@@ -80,9 +106,36 @@
     <Compile Include="Components\Component.cs" />
     <Compile Include="Components\CPX.cs" />
     <Compile Include="Components\Door.cs" />
+    <Compile Include="Components\Laser.cs" />
+    <Compile Include="Components\MiniController.cs" />
     <Compile Include="Components\Target.cs" />
-    <Compile Include="Client\TargetHandler.cs" />
+    <Compile Include="Client\TargetClientHandler.cs" />
+    <Compile Include="CustomEventArgs\BroadcastRplyEventArgs.cs" />
+    <Compile Include="CustomEventArgs\DoorStateChangeArgs.cs" />
+    <Compile Include="CustomEventArgs\IncomingStatsMessageArgs.cs" />
+    <Compile Include="CustomEventArgs\InvokeTriggerEventArgs.cs" />
+    <Compile Include="CustomEventArgs\TargetStateChangeArgs.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Profiles\IProfile.cs" />
     <Compile Include="Server\ServerRequestHandler.cs" />
+    <Compile Include="Timers\UpdateGUITimer.cs" />
+    <Compile Include="UserControls\AdminSettings.xaml.cs">
+      <DependentUpon>AdminSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timers\BroadcastMessageTimer.cs" />
+    <Compile Include="UserControls\RPISettingsWindowxaml.xaml.cs">
+      <DependentUpon>RPISettingsWindowxaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RPIStatus.xaml.cs">
+      <DependentUpon>RPIStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SetDefaultStates.xaml.cs">
+      <DependentUpon>SetDefaultStates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trigger.xaml.cs">
+      <DependentUpon>Trigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Constants.cs" />
     <Compile Include="UserControls\Door.xaml.cs">
       <DependentUpon>Door.xaml</DependentUpon>
     </Compile>
@@ -92,6 +145,10 @@
     <Compile Include="UserControls\GameSettings.xaml.cs">
       <DependentUpon>GameSettings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\RPISettings.xaml.cs">
+      <DependentUpon>RPISettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Conversions.cs" />
     <Compile Include="Utils\Db_Utils.cs" />
     <Compile Include="Utils\Enums.cs" />
     <Compile Include="Components\Sensor.cs" />
@@ -99,19 +156,22 @@
     <Compile Include="Logger\LogBase.cs" />
     <Compile Include="Logger\LogHelper.cs" />
     <Compile Include="Server\TCPServer.cs" />
-    <Compile Include="UserControls\DoorControls.xaml.cs">
-      <DependentUpon>DoorControls.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\DoorSketch.xaml.cs">
       <DependentUpon>DoorSketch.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\OpenButton.xaml.cs">
-      <DependentUpon>OpenButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ToggleSwitch.xaml.cs">
       <DependentUpon>ToggleSwitch.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Timers\ComponentStateCheckAndUpdate.cs" />
+    <Compile Include="Utils\GeneralUtils.cs" />
+    <Compile Include="Utils\GlobalEvents.cs" />
     <Compile Include="Utils\ISynchronizeInvokeExtensions.cs" />
+    <Compile Include="Utils\MediaAudioPlayer.cs" />
+    <Compile Include="Utils\ParseItems.cs" />
+    <Compile Include="Utils\Play.cs" />
+    <Compile Include="Utils\Sample.cs" />
+    <Compile Include="Utils\SerialPortFixer.cs" />
+    <Compile Include="Utils\uDMX.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,11 +184,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControls\Door.xaml">
+    <Page Include="UserControls\AdminSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\DoorControls.xaml">
+    <Page Include="UserControls\Door.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -144,11 +204,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\OpenButton.xaml">
+    <Page Include="UserControls\RPISettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RPISettingsWindowxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RPIStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\SetDefaultStates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\ToggleSwitch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trigger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,15 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="1.png" />
-    <Content Include="Database\Database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database\Database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
-    <Resource Include="‏‏ללא שם - עותק.png" />
-    <Resource Include="ללא שם.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -204,5 +271,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

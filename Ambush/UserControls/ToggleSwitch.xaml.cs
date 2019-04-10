@@ -25,24 +25,25 @@ namespace Ambush.UserControls
         SolidColorBrush Off = new SolidColorBrush(Color.FromRgb(160, 160, 160));
         SolidColorBrush On = new SolidColorBrush(Color.FromRgb(130, 190, 125));
         private bool Toggled = false;
+
+
         public ToggleSwitch()
         {
             InitializeComponent();
             DotBackGround.Fill = Off;
             Toggled = false;
-            //Dot.Margin = LeftSide;
         }
         
         public bool Toggled1 { get => Toggled; set => Toggled = value; }
 
         private void Dot_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Toggle();
+            //Toggle();
         }
 
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Toggle();
+            //Toggle();
         }
 
         public void Toggle()
@@ -69,12 +70,6 @@ namespace Ambush.UserControls
             else return false;
         }
 
-        public void checkToggled()
-        {
-            //if (Toggled && Dot.Margin == LeftSide)
-            //    Dot.Margin = RightSide;
-            //else if (!Toggled && Dot.Margin == RightSide)
-            //    Dot.Margin = LeftSide;
-        }
+
     }
 }

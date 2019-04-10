@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Ambush.UserControls.AdminSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ambush.UserControls"
+             mc:Ignorable="d" Height="531.693" Width="755.75">
+
+
+    <Grid Background="#b3b3b3" HorizontalAlignment="Left" Height="575" Margin="10,0,0,-43" VerticalAlignment="Top" Width="746">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="811*"/>
+            <ColumnDefinition Width="234*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="287*"/>
+            <RowDefinition Height="247*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Button Name="r1" Content="RPI1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Height="107" Click="R1_Click"/>
+        <Button Name="r2" Content="RPI2" HorizontalAlignment="Left" Margin="0,107,0,0" VerticalAlignment="Top" Width="206" Height="107" Click="R2_Click"/>
+        <Button Name="r3" Content="RPI3" HorizontalAlignment="Left" Margin="0,214,0,0" VerticalAlignment="Top" Width="206" Height="107" Grid.RowSpan="2" Click="R3_Click"/>
+        <Button Name="r4" Content="RPI4" HorizontalAlignment="Left" Margin="0,34,0,0" VerticalAlignment="Top" Width="206" Height="108" Grid.Row="1" Click="R4_Click"/>
+        <Button Name="r5" Content="RPI5" HorizontalAlignment="Left" Margin="0,142,0,0" VerticalAlignment="Top" Width="206" Height="106" Grid.Row="1" Grid.RowSpan="2" Click="R5_Click"/>
+        <Label FontSize ="33" Content="Admin settings" HorizontalAlignment="Left" Margin="315,18,0,0" VerticalAlignment="Top" Height="56" Width="244"/>
+        
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="49,200,0,0" Grid.Row="1" VerticalAlignment="Top" Width="94" Height="41" Grid.Column="1" Grid.RowSpan="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="6" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="0,0,0,41" ></Border>
+        <StackPanel Margin="206,100,68,105" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+            <ContentControl x:Name="rpiSettings"/>
+
+        </StackPanel>
+
+    </Grid>
+
+
+</UserControl>
+ 

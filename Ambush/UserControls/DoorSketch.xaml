@@ -1,4 +1,5 @@
 ﻿<UserControl x:Class="Ambush.UserControls.DoorSketch"
+             x:Name="doorsketch"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -127,7 +128,7 @@
                 </TransformGroup>
             </local:Door.RenderTransform>
         </local:Door>
-        <local:Door x:Name="door12" HorizontalAlignment="Left" Height="68" Margin="246,244,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5">
+        <local:Door x:Name="door12" HorizontalAlignment="Left" Height="68" Margin="246,244,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.5,0.5" >
             <local:Door.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

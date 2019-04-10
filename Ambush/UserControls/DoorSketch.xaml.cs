@@ -1,5 +1,6 @@
 ﻿using Ambush.Client;
 using Ambush.Components;
+using Ambush.CustomEventArgs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,31 +25,12 @@ namespace Ambush.UserControls
     /// </summary>
     public partial class DoorSketch : UserControl
     {
-        //Constants
-        private const String CRLF = "\r\n";
-        private const string LOCALHOST = "10.0.0.2";
-        private const int DEFAULT_PORT = 8080;
-
-
-        //Fields
-        private IPAddress _serverIpAddress;
-        private int _port;
-        private TCPClient _tcpClient;
-        List<CPX> CPXes;
         DoorClientHandler handler;
-
-        public Brush On { get; private set; }
-        public bool Toggled { get; private set; }
-        public object Dot { get; private set; }
-        public object RightSide { get; private set; }
 
         public DoorSketch()
         {
-
             InitializeComponent();
             AssignDoorIds();
-
-
         }
         
         private void AssignDoorIds()
@@ -56,18 +38,20 @@ namespace Ambush.UserControls
             for(int i = 1; FindName("door"+i.ToString()) != null; i++)
             {
                 Door door = FindName("door" + i.ToString()) as Door;
-                door.doorId = i ;
+                door.physicalID = i;
                 door.OnDoorStateChange += HandleDoorStateChange;
+                
             }
         }
 
         public void HandleDoorStateChange(Object sender, DoorStateChangeArgs e)
         {
             handler = new DoorClientHandler();
-            DoorDirection state = e.state;
+            Direction state = e.state;
             int id = e.doorId;
+            int physicalID = e.physicalId;
             //TODO tell client api to open door
-            handler.ChangeDoorState(id, state);
+            handler.ChangeDoorState(id, state, physicalID);
         }
        
     }
