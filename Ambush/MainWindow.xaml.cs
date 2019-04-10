@@ -41,9 +41,11 @@ namespace Ambush
     public partial class MainWindow : Window
     {
         public readonly string backgroundImagePath = "file://C://Users//User//Downloads//LOGO-AMBUSH.jpg";
+        public readonly string splashImage = "/Images/LOGO-AMBUSH.jpg";
         public DateTime date { get; set; }
         public static DispatcherTimer t;
         public static bool isStop;
+        SplashScreen splashScreen;
         private double eventTimerInterval = 300 * 60.0; // every 60 sec
 
 
@@ -51,10 +53,16 @@ namespace Ambush
         {
 
             InitializeComponent();
-
+            //try
+            //{
+            //    splashScreen = new SplashScreen(splashImage);
+            //    splashScreen.Show(true);
+            ////}
+            //catch (Exception e) { }
             Play game = new Play();
             List<CPX> cPXes = Db_Utils.InitComponents();
             Play.setCPXes(cPXes);
+            
 
             //string query = "SELECT physicalID from Target WHERE rpi='5'";
             //DataTable table = Db_Utils.GetDataTable(query);
@@ -127,9 +135,8 @@ namespace Ambush
             ///every X minutes send broadcast message  - ask who is online (RPI & ben's stuff)
             ///each device will return unique id and get IP from message
             ///
-            
         }
-        
+
 
         public void setBackgroundImage()
         {
@@ -137,7 +144,7 @@ namespace Ambush
             Image image = new Image();
             image.Source = new BitmapImage(new Uri(@backgroundImagePath));
             myBrush.ImageSource = image.Source;
-            
+
             this.Background = myBrush;
             this.Background.Opacity = 0.5;
         }
@@ -148,20 +155,20 @@ namespace Ambush
             TimerDisplay.Text = time.Substring(0, 8);
 
 
-            if (TimerDisplay.Text != "" )
+            if (TimerDisplay.Text != "")
             {
                 string[] times = TimerDisplay.Text.Split(':');
-                if(Int32.Parse(times[1]) == Constants.RoundMinutes)
+                if (Int32.Parse(times[1]) == Constants.RoundMinutes)
                 {
                     //TODO -- > Activate ALARM --> Turn on lights --> open door path to exit 
-                    
+
                     timer.Stop();
                     TimerDisplay.Text = "";
                     //Play.SetComponentsToDefault();
                     GeneralUtils.InfoMessageBox("Timer stopped");
                 }
             }
-            if(isStop)
+            if (isStop)
             {
                 timer.Stop();
                 TimerDisplay.Text = "";
@@ -187,13 +194,13 @@ namespace Ambush
 
             Window win2 = new UserControls.RPISettingsWindowxaml();
             win2.Show();
-            
+
         }
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             isStop = false;
-            t = new DispatcherTimer(new TimeSpan(0, 0, 0, 1, 0), DispatcherPriority.Background,  t_Tick, Dispatcher.CurrentDispatcher);
+            t = new DispatcherTimer(new TimeSpan(0, 0, 0, 1, 0), DispatcherPriority.Background, t_Tick, Dispatcher.CurrentDispatcher);
             t.IsEnabled = true;
             this.date = DateTime.Now;
         }
@@ -209,4 +216,7 @@ namespace Ambush
             isStop = true;
         }
     }
+
+
+
 }

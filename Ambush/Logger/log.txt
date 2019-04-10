@@ -2755,3 +2755,10 @@
 10-04-201912:51:11 -> 10/04/2019 12:51:11 :Door#2 -SET:3:
 10-04-201913:19:44 -> 10/04/2019 13:19:44 :Door#2 -SET:3:
 10-04-201913:28:45 -> 10/04/2019 13:28:45 :Door#2 -SET:1:
+10-04-201914:18:59 -> Client System.Net.Sockets.TcpClient connected
+10-04-201914:24:54 -> Client System.Net.Sockets.TcpClient connected
+10-04-201914:29:41 -> Client System.Net.Sockets.TcpClient connected
+10-04-201915:05:33 -> Client System.Net.Sockets.TcpClient connected
+10-04-201915:06:57 -> Client System.Net.Sockets.TcpClient connected
+10-04-201915:07:26 -> Client System.Net.Sockets.TcpClient connected
+10-04-201916:10:24 -> 10/04/2019 16:10:24 :Door#2 -SET:3:
