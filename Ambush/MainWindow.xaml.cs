@@ -53,32 +53,11 @@ namespace Ambush
         {
 
             InitializeComponent();
-            //try
-            //{
-            //    splashScreen = new SplashScreen(splashImage);
-            //    splashScreen.Show(true);
-            ////}
-            //catch (Exception e) { }
             Play game = new Play();
             List<CPX> cPXes = Db_Utils.InitComponents();
             Play.setCPXes(cPXes);
+
             
-
-            //string query = "SELECT physicalID from Target WHERE rpi='5'";
-            //DataTable table = Db_Utils.GetDataTable(query);
-
-
-
-            //List<CPX> cPXes = Play.cPXes;
-            //foreach(CPX cpx in cPXes)
-            //{
-            //    Console.WriteLine("------------------------------");
-            //    Console.WriteLine(cpx.ToString());
-            //    Console.WriteLine("------------------------------");
-            //    Console.WriteLine("\n");
-            //}
-            //MessageBox.Show("done");
-            //CPX cpx = new CPX(3, "192.168.0.72",null);
 
             /*<<---------------DMX CONTROL--------------->>
             using (uDMX dmx = new uDMX())

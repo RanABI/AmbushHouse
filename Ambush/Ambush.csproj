@@ -274,5 +274,8 @@
   <ItemGroup>
     <SplashScreen Include="Images\LOGO-AMBUSH.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Python Scripts\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
