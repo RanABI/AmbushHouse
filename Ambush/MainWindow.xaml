@@ -11,7 +11,7 @@
         <UserControls:DoorSketch HorizontalAlignment="Left" Height="491" Margin="1332,10,-185,0" VerticalAlignment="Top" Width="800"/>
         <Button x:Name="setTriggers" Content="Set triggers" HorizontalAlignment="Left" Margin="127,186,0,0" VerticalAlignment="Top" Width="99" Height="33" Click="SetTriggers_Click"/>
         <Button x:Name="RPISettings" Content="RPI settings" HorizontalAlignment="Left" Margin="127,131,0,0" VerticalAlignment="Top" Width="99" Height="33" Click="RPISettings_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="239" Margin="21,38,0,0" VerticalAlignment="Top" Width="319"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="239" Margin="127,503,0,0" VerticalAlignment="Top" Width="319"/>
         <Label Content="Initiating settings" HorizontalAlignment="Left" Margin="108,66,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="18"/>
         <UserControls:RPIStatus HorizontalAlignment="Left" Height="98" Margin="21,320,0,0" VerticalAlignment="Top" Width="481" />
         <Label Content="Select game level" HorizontalAlignment="Left" Margin="629,107,0,0" VerticalAlignment="Top" Width="156" FontSize="16" Height="42"/>
@@ -27,6 +27,8 @@
         <Label Content="Time elapsed" HorizontalAlignment="Left" Margin="629,235,0,0" VerticalAlignment="Top" Width="119" FontSize="16" Height="42"/>
         <Button Content="Check" HorizontalAlignment="Left" Margin="833,405,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button x:Name="stopGame" Content="Stop" HorizontalAlignment="Left" Margin="629,192,0,0" VerticalAlignment="Top" Width="273" RenderTransformOrigin="-1.56,0.3" Click="StopGame_Click"/>
+        <Button x:Name="Alert" Content="Alarm" HorizontalAlignment="Left" Margin="593,447,0,0" VerticalAlignment="Top" Width="75" Height="54" Click="Alert_Click" Background="Red" FontSize="16" FontFamily="Showcard Gothic"/>
+        <Button x:Name="defaultValues" Content="Set default values" HorizontalAlignment="Left" Margin="127,241,0,0" VerticalAlignment="Top" Width="99" Height="29" Click="DefaultValues_Click"/>
     </Grid>
 
 

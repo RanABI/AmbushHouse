@@ -14,7 +14,7 @@ namespace Ambush.Components
 {
     class Target : Component,IProfile
     {
-        Sensor sensor;
+        public Sensor sensor;
         public delegate void TargetStateChanged(object sender, TargetStateChangeArgs e);
         public event TargetStateChanged OnTargetStateChange;
         TargetClientHandler handler;

@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ambushicon_u3D_4.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Device.Net, Version=2.7.0.0, Culture=neutral, PublicKeyToken=918542c6e3a3318a, processorArchitecture=MSIL">
       <HintPath>..\packages\Device.Net.2.7.0\lib\net45\Device.Net.dll</HintPath>
@@ -117,7 +120,6 @@
     <Compile Include="CustomEventArgs\TargetStateChangeArgs.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Profiles\IProfile.cs" />
-    <Compile Include="Python Scripts\Class1.cs" />
     <Compile Include="Server\ServerRequestHandler.cs" />
     <Compile Include="Timers\UpdateGUITimer.cs" />
     <Compile Include="UserControls\AdminSettings.xaml.cs">
@@ -166,6 +168,7 @@
     <Compile Include="Timers\ComponentStateCheckAndUpdate.cs" />
     <Compile Include="Utils\GeneralUtils.cs" />
     <Compile Include="Utils\GlobalEvents.cs" />
+    <Compile Include="Utils\InputBox.cs" />
     <Compile Include="Utils\ISynchronizeInvokeExtensions.cs" />
     <Compile Include="Utils\MediaAudioPlayer.cs" />
     <Compile Include="Utils\ParseItems.cs" />
@@ -275,6 +278,11 @@
   <ItemGroup>
     <SplashScreen Include="Images\LOGO-AMBUSH.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Python Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ambushicon_u3D_4.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

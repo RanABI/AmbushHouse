@@ -45,7 +45,6 @@ namespace Ambush
         public DateTime date { get; set; }
         public static DispatcherTimer t;
         public static bool isStop;
-        SplashScreen splashScreen;
         private double eventTimerInterval = 300 * 60.0; // every 60 sec
 
 
@@ -53,67 +52,16 @@ namespace Ambush
         {
 
             InitializeComponent();
-            Play game = new Play();
-            List<CPX> cPXes = Db_Utils.InitComponents();
-            Play.setCPXes(cPXes);
 
-            
-
-            /*<<---------------DMX CONTROL--------------->>
-            using (uDMX dmx = new uDMX())
-            {
-                if (dmx.IsOpen)
-                {
-                    while (true)
-                    {
-                        // Set channel 0 to value 127
-                        Console.WriteLine(dmx.SetSingleChannel(1, 127).ToString());
-                        Console.WriteLine(dmx.SetSingleChannel(2, 127).ToString());
-                        Console.WriteLine(dmx.SetSingleChannel(3, 127).ToString()); 
-                        dmx.SetSingleChannel(4, 50);
-                        dmx.SetSingleChannel(4, 80);
-                        dmx.SetSingleChannel(4, 110);
-                        dmx.SetSingleChannel(4, 140);
-                        dmx.SetSingleChannel(4, 180);
-                        dmx.SetSingleChannel(4, 255);
-                        dmx.SetSingleChannel(4, 0);
-                        dmx.SetSingleChannel(5, 50);
-                        dmx.SetSingleChannel(5, 80);
-                        dmx.SetSingleChannel(5, 110);
-                        dmx.SetSingleChannel(5, 140);
-                        dmx.SetSingleChannel(5, 180);
-                        dmx.SetSingleChannel(5, 255);
-                        dmx.SetSingleChannel(5, 0);
-
-
-                    }
-                    // Set three channels, starting with channel 0
-                    //byte[] values = new byte[] { 0xFF, 0xAA, 0x05 };
-
-                    //dmx.SetChannelRange(0, values);
-                }
-            }
-            ---------------DMX CONTROL---------------*/
-
-            //using (TCPClient TcpClient = new TCPClient("ACTIVATE","192.168.0.56", 8080)) { }
-
+            /* Load data from database */
+            //init();
 
             /* MainWindow background */
             setBackgroundImage();
-            //bg();
+
             /* Initialize and run server listener */
             TCPServer server = new TCPServer();
-            //EventTimer.Timer =  new System.Timers.Timer(1000 * 5.0); // 60 sec interval
-            //ComponentStateCheckAndUpdate timer = new ComponentStateCheckAndUpdate(eventTimerInterval);
 
-            // BroadcastMessageTimer timer2 = new BroadcastMessageTimer(5000.0);
-
-            // using (TCPClient client = new TCPClient(Constants.Broadcast_Message, cpx)) { }
-
-            ////TODO : Broadcast message at startup
-            ///every X minutes send broadcast message  - ask who is online (RPI & ben's stuff)
-            ///each device will return unique id and get IP from message
-            ///
         }
 
 
@@ -182,6 +130,7 @@ namespace Ambush
             t = new DispatcherTimer(new TimeSpan(0, 0, 0, 1, 0), DispatcherPriority.Background, t_Tick, Dispatcher.CurrentDispatcher);
             t.IsEnabled = true;
             this.date = DateTime.Now;
+            //TODO --> Change first door's state to start game
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -193,6 +142,117 @@ namespace Ambush
         private void StopGame_Click(object sender, RoutedEventArgs e)
         {
             isStop = true;
+        }
+
+        public static void dmxControl()
+        {
+            using (uDMX dmx = new uDMX())
+            {
+                if (dmx.IsOpen)
+                {
+                    while (true)
+                    {
+                        // Set channel 0 to value 127
+                        Console.WriteLine(dmx.SetSingleChannel(1, 127).ToString());
+                        Console.WriteLine(dmx.SetSingleChannel(2, 127).ToString());
+                        Console.WriteLine(dmx.SetSingleChannel(3, 127).ToString());
+                        dmx.SetSingleChannel(4, 50);
+                        dmx.SetSingleChannel(4, 80);
+                        dmx.SetSingleChannel(4, 110);
+                        dmx.SetSingleChannel(4, 140);
+                        dmx.SetSingleChannel(4, 180);
+                        dmx.SetSingleChannel(4, 255);
+                        dmx.SetSingleChannel(4, 0);
+                        dmx.SetSingleChannel(5, 50);
+                        dmx.SetSingleChannel(5, 80);
+                        dmx.SetSingleChannel(5, 110);
+                        dmx.SetSingleChannel(5, 140);
+                        dmx.SetSingleChannel(5, 180);
+                        dmx.SetSingleChannel(5, 255);
+                        dmx.SetSingleChannel(5, 0);
+
+
+                    }
+                    // Set three channels, starting with channel 0
+                    //byte[] values = new byte[] { 0xFF, 0xAA, 0x05 };
+
+                    //dmx.SetChannelRange(0, values);
+                }
+            }
+        }
+
+        private void Alert_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO --> Get buzzer IP
+            using (TCPClient TcpClient = new TCPClient("ACTIVATE","192.168.0.56", 8080)) { }
+        }
+
+        private void startTimers()
+        {
+
+            //EventTimer.Timer =  new System.Timers.Timer(1000 * 5.0); // 60 sec interval
+
+            Timers.ComponentStateCheckAndUpdateTimer timer = new Timers.ComponentStateCheckAndUpdateTimer(eventTimerInterval);
+
+            BroadcastMessageTimer timer2 = new BroadcastMessageTimer(5000.0);
+        }
+
+        private void init()
+        {
+            Play game = new Play();
+            List<CPX> cPXes = Db_Utils.InitComponents();
+            Play.setCPXes(cPXes);
+        }
+
+        private void DefaultValues_Click(object sender, RoutedEventArgs e)
+        {
+            
+            if (GeneralUtils.yesNoMessageBox("Are you sure you want to reset default component values?"))
+            {
+                return;
+            }
+            else
+            {
+                List<CPX> cpxes = Play.cPXes;
+                foreach (CPX cpx in cpxes)
+                {
+                    foreach (Component cmp in cpx.components)
+                    {
+                        switch (cmp.source)
+                        {
+                            case Constants.DR:
+                                {
+                                    string var = new InputBox("Door #" + cmp.physicalID.ToString(), "Set default", "").ShowDialog();
+                                    cmp.defaultState = var;
+                                    break;
+                                }
+                            case Constants.TR:
+                                {
+                                    string var = new InputBox("Target #" + cmp.physicalID.ToString(), "Set default", "").ShowDialog();
+                                    cmp.defaultState = var;
+                                    Target target = (Target)cmp;
+                                    var = new InputBox("Target #" + cmp.physicalID.ToString() + " sensor #"+ target.sensor.physicalID.ToString() , "Set default", "").ShowDialog();
+                                    target.sensor.defaultState = var;
+
+                                    break;
+                                }
+                        }
+                    }
+                }
+
+                List<MiniController> nods = Play.nods;
+                foreach(MiniController con in nods)
+                {
+                    foreach (Laser laser in con.lasers)
+                    {
+                        string var = new InputBox("Controller #" + con.id.ToString() + " Laser #" + laser.physicalID.ToString(), "Set default", "").ShowDialog();
+                        laser.defaultState = var;
+                        //TODO --> ADD DETECTORS
+                    }
+
+
+                }
+            }
         }
     }
 
