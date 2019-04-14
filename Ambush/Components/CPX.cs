@@ -45,7 +45,7 @@ namespace Ambush.Components
             ////TODO SET RPI SCRIPT ACCORDINGLY
             StringBuilder builder = new StringBuilder();
             builder.Append("AR:GET:CPX:");
-            builder.Append(this.id);
+            builder.Append(this.id.ToString());
             return builder.ToString();
         }
 

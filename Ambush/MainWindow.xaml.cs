@@ -53,6 +53,7 @@ namespace Ambush
 
             InitializeComponent();
 
+
             /* Load data from database */
             init();
 
@@ -61,6 +62,10 @@ namespace Ambush
 
             /* Initialize and run server listener */
             TCPServer server = new TCPServer();
+
+
+
+
 
         }
 
@@ -135,8 +140,12 @@ namespace Ambush
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Components.Door door = new Components.Door(2, 2, Direction.Middle);
-            door.setDoorState(Direction.Down);
+            //Components.Door door = new Components.Door(2, 2, Direction.Middle);
+            //door.setDoorState(Direction.Down);
+            string l = "AR:SRE:D01:10:11111100";
+            string d = "AR:SRE:L01:10:11111100";
+            using (TCPClient client = new TCPClient(l, "192.168.0.28", 8080)) { }
+            using (TCPClient client = new TCPClient(d, "192.168.0.27", 8080)) { }
         }
 
         private void StopGame_Click(object sender, RoutedEventArgs e)
@@ -204,6 +213,7 @@ namespace Ambush
             Play.setCPXes(cPXes);
             List<MiniController> cons = Db_Utils.InitControllers();
             Play.setControllers(cons);
+            Play.score = 0;
         }
 
         private void DefaultValues_Click(object sender, RoutedEventArgs e)

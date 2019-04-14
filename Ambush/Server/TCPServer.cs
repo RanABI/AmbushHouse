@@ -79,7 +79,7 @@ namespace Ambush
                 /*convert the data received into a string*/
                 string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
                 //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Received : " + dataReceived + "\n");
-                Console.Out.WriteLine("CLIENT MESSAGE:" + dataReceived + "\n");
+                Console.Out.WriteLine("CLIENT MESSAGE: " + dataReceived + "\n");
 
                 string clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
 

@@ -83,13 +83,13 @@ namespace Ambush.Server
             AR:Dxx:SRE:OP_CODE:xxxxxxxx
             ----------------------------------------------------------------
             */
-            if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply) //Not a broadcast message
+            if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply && inputs[(int)MsgVars.Action] != Constants.INIT && inputs[(int)MsgVars.Action] != "SER") //Not a broadcast message
             {
                 currentState = inputs[(int)MsgVars.State];
                 physicalID = Int32.Parse(inputs[(int)MsgVars.PhysicalId]);
                 cpx = Play.getCpxByPhysicalId(physicalID);
             }
-            if (inputs[(int)MsgVars.Action].StartsWith("D"))
+            else if (inputs[(int)MsgVars.Action].StartsWith("D"))
             {
                 //Get controller by Id , parse 8-bit message and set lasers state by these values
                 string id = inputs[Constants.Detector_ID].Replace("D", string.Empty);
@@ -103,17 +103,15 @@ namespace Ambush.Server
                             /* Op_Code = 00 */
 
                             //Dxx --> Detector, 2 bit id 
-                            List<Laser> lasers = new List<Laser>();
-
-                            byte[] bytes = Encoding.ASCII.GetBytes(inputs[5]);
-                            //for (int i = 0; i < bytes.Length; i++)
-                            //{
-                            //    var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
-                            //    if (ans == "1")
-                            //        lasers.Add(new Laser(i, State.ON));
-                            //    else lasers.Add(new Laser(i, State.OFF));
-                            //}
-                            con.setLaserList(lasers);
+                           
+                            byte[] bytes = Encoding.ASCII.GetBytes(inputs[4]);
+                            for (int i = 0; i < bytes.Length; i++)
+                            {
+                                var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
+                                if (ans == "1")
+                                    con.detectors[i].isOn = State.ON;
+                                else con.detectors[i].isOn = State.OFF;
+                            }
                             break;
                         }
                     case Constants.Laser_Crossed:
@@ -125,12 +123,14 @@ namespace Ambush.Server
                             for (int i = 0; i < bytes.Length; i++)
                             {
                                 var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
-                                if (ans == "1")
+                                if (ans == "0")
                                 {
                                     laser = con.getLaserById(i);
                                     InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
                                     args.physicalID = laser.physicalID.ToString();
-                                    InvokerTrigger(this, args);                                }
+                                    if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
+                                        InvokerTrigger(this, args);                    
+                                }
                             }
                             break;
                         }
@@ -158,38 +158,40 @@ namespace Ambush.Server
                                     if (inputs[(int)MsgVars.Answer] == Constants.Success)
                                     {
                                         /* Save to log & Update Database */
-                                        saveToLog(Constants.Target, physicalID, Constants.SET, currentState, "");
-                                        UpdateDbNewState(Constants.Target, currentState, physicalID);
+                                        //saveToLog(Constants.Target, physicalID, Constants.SET, currentState, "");
 
                                         /*Update Object  */
-                                        foreach (Component cmp in cpx.components)
+                                        UpdateDbNewState(Constants.Target, currentState, physicalID);
+                                        target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        target.state = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
+                                        target.failCount = 0;
+                                        /* Invoke next component in case of need */
+                                        
+                                        if(Play.GetKey(Play.xTriggeredY,physicalID.ToString()) != "")
                                         {
-                                            if (cmp.physicalID == physicalID)
-                                            {
-                                                target = (Components.Target)cmp;
-                                                target.state = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
-                                                break;
-                                            }
+                                            InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
+                                            args.physicalID = target.physicalID.ToString();
+                                            InvokerTrigger(this, args);
                                         }
-
 
                                     }
                                     else if (inputs[(int)MsgVars.Answer] == Constants.Failure)
                                     {
-
                                         /* Retry in case of a failed SET */
-                                        foreach (Component cmp in cpx.components)
+                                        target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
+                                        //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
+                                        if (target != null)
                                         {
-                                            if (cmp.physicalID == physicalID)
+                                            if (target.failCount < 3)
+                                                target.setTargetState(dir);
+                                            else
                                             {
-                                                target = (Target)cmp;
-                                                break;
+                                                MessageBox.Show("Target #" + physicalID.ToString() + " is not responding. Please check for errors");
+                                                target.failCount = 0;
+                                                return;
                                             }
                                         }
-                                        Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
-                                        saveToLog(Constants.Target, physicalID, Constants.SET, currentState, "Set failed. Trying again");
-                                        if (target != null)
-                                            target.setTargetState(dir);
 
                                     }
                                     break;
@@ -205,19 +207,22 @@ namespace Ambush.Server
 
                                         /*Update Object  */
                                         door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        door.state = Conversions.stringToDirection(currentState);
                                         door.failCount = 0;
                                         CustomEventArgs.DoorStateChangeArgs args = new CustomEventArgs.DoorStateChangeArgs();
                                         args.physicalId = door.physicalID;
                                         args.state = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
                                         ChangeDoorUI?.Invoke(this, args);
-                                        InvokeTriggerEventArgs args2 = new InvokeTriggerEventArgs();
-                                        args2.physicalID = door.physicalID.ToString();
-                                        
 
                                         /* Save to log & Update Database */
                                         //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "");
                                         UpdateDbNewState(Constants.Door, currentState, physicalID);
-                                        InvokerTrigger(this, args2);
+                                        if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
+                                        {
+                                            InvokeTriggerEventArgs args2 = new InvokeTriggerEventArgs();
+                                            args2.physicalID = door.physicalID.ToString();
+                                            InvokerTrigger(this, args2);
+                                        }
                                         break;
 
                                     }
@@ -227,7 +232,7 @@ namespace Ambush.Server
                                         /* Retry in case of a failed SET */
                                         door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
                                         Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
-                                        saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
+                                        //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
                                         if (door != null)
                                         {
                                             if (door.failCount < 3)
@@ -259,17 +264,12 @@ namespace Ambush.Server
                                     */
                                     Target target = null;
                                     Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
-                                    foreach (Component cmp in cpx.components)
-                                    {
-                                        if (cmp.physicalID == physicalID)
-                                        {
-                                            target = (Target)cmp;
-                                            break;
-                                        }
-                                    }
+                                    target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+
                                     if (target != null)
                                     {
-                                        target.state = dir; ;
+                                        target.state = dir;
+                                        UpdateDbNewState(Constants.Target, Conversions.DirectionToString(dir), physicalID);
                                     }
                                     break;
                                 }
@@ -281,18 +281,11 @@ namespace Ambush.Server
 
                                     Components.Door door = null;
                                     Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.Answer]);
-                                    foreach (Component cmp in cpx.components)
-                                    {
-                                        if (cmp.physicalID == physicalID)
-                                        {
-                                            door = (Components.Door)cmp;
-                                            break;
-                                        }
-                                    }
+                                    door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
                                     if (door != null)
                                     {
                                         door.state = dir;
-                                        //Update database as well
+                                        UpdateDbNewState(Constants.Door, Conversions.DirectionToString(dir), physicalID);
                                     }
                                     break;
                                 }
@@ -322,9 +315,16 @@ namespace Ambush.Server
                             {
                                 physicalId = row.ItemArray[0].ToString();
                             }
-                            InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
-                            args.physicalID = physicalId;
-                            InvokerTrigger(this, args);
+                            /* Add score to player */
+                            Play.score += Int32.Parse(inputs[4]);
+
+                            if (Play.GetKey(Play.xTriggeredY, physicalId.ToString()) != "")
+                            {
+                                InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
+                                args.physicalID = physicalId;
+                                InvokerTrigger(this, args);
+                            }
+                                
                             //TargetClientHandler handler = new TargetClientHandler(Int32.Parse(inputs[(int)MsgVars.Id]));
                             //Turn on led lights Source:Id:True/False (send to MicroController)
                             //handler.TargetLedControl(State.ON);
@@ -341,11 +341,15 @@ namespace Ambush.Server
                     }
                 case Constants.INIT:
                     {
-                        List<CPX> cPXes = Play.cPXes;
-                        int id = Int32.Parse(inputs[2]);
+                        //AR:INIT:ID:IP
+                        string id = inputs[2];
                         string ip = inputs[3];
-                        cPXes.Add(new CPX(id, ip, null));
-                        Play.setCPXes(cPXes);
+                        //Save IP @ database and update var
+                        string query = "UPDATE MiniController SET ip='" + ip + "' WHERE id='" + id + "'";
+                        Db_Utils.ExecuteSql(query);
+
+                        MiniController con = Play.getControllerById(id);
+                        con.ip = ip;
                         break;
                     }
                 case Constants.Broadcast_Reply:

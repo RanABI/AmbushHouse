@@ -36,6 +36,26 @@ namespace Ambush.Utils
             }
 
         }
+        public static string DirectionToString(Direction dir)
+        {
+            switch (dir)
+            {
+                case Direction.Down:
+                    {
+                        return "3";
+                    }
+                case Direction.Middle:
+                    {
+                        return "2";
+                    }
+                case Direction.Up:
+                    {
+                        return "1";
+                    }
+                default:
+                    return "2";
+            }
+        }
     }
 
 }

@@ -166,7 +166,7 @@ namespace Ambush.Utils
 
             }
         }
-        private static string GetKey(IReadOnlyDictionary<string, string> dictValues, string keyValue)
+        public static string GetKey(IReadOnlyDictionary<string, string> dictValues, string keyValue)
         {
             return dictValues.ContainsKey(keyValue) ? dictValues[keyValue] : "";
         }

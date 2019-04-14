@@ -3305,3 +3305,17 @@
 14-04-201916:15:45 -> 14/04/2019 16:15:45 :Door#3 -SET:1:
 14-04-201916:16:16 -> 14/04/2019 16:16:16 :Door#3 -SET:1:
 14-04-201916:16:50 -> 14/04/2019 16:16:50 :Door#3 -SET:1:
+14-04-201918:45:40 -> Sending back : AR:INIT:01:192.168.0.28
+
+14-04-201918:50:29 -> Sending back : AR:INIT:01:192.168.0.28
+
+14-04-201918:52:31 -> Sending back : AR:INIT:01:192.168.0.28
+
+14-04-201918:56:30 -> Client System.Net.Sockets.TcpClient connected
+14-04-201919:03:46 -> Sending back : AR:INIT:01:192.168.0.28
+
+14-04-201919:03:52 -> Client System.Net.Sockets.TcpClient connected
+14-04-201919:17:57 -> Sending back : AR:INIT:01:192.168.0.28
+
+14-04-201919:18:12 -> Client System.Net.Sockets.TcpClient connected
+14-04-201919:19:23 -> Client System.Net.Sockets.TcpClient connected
