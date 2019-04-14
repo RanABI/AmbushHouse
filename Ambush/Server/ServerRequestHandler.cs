@@ -106,15 +106,14 @@ namespace Ambush.Server
                             List<Laser> lasers = new List<Laser>();
 
                             byte[] bytes = Encoding.ASCII.GetBytes(inputs[5]);
-                            for (int i = 0; i < bytes.Length; i++)
-                            {
-                                var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
-                                if (ans == "1")
-                                    lasers.Add(new Laser(i, State.ON));
-                                else lasers.Add(new Laser(i, State.OFF));
-                            }
-                            con
-                                .setLaserList(lasers);
+                            //for (int i = 0; i < bytes.Length; i++)
+                            //{
+                            //    var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
+                            //    if (ans == "1")
+                            //        lasers.Add(new Laser(i, State.ON));
+                            //    else lasers.Add(new Laser(i, State.OFF));
+                            //}
+                            con.setLaserList(lasers);
                             break;
                         }
                     case Constants.Laser_Crossed:
@@ -130,9 +129,8 @@ namespace Ambush.Server
                                 {
                                     laser = con.getLaserById(i);
                                     InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
-                                    //args.physicalID = 
-                                    //TODO -- > Check how to determine PhysicalID of Laser component and activate following Trigger
-                                }
+                                    args.physicalID = laser.physicalID.ToString();
+                                    InvokerTrigger(this, args);                                }
                             }
                             break;
                         }
@@ -212,9 +210,14 @@ namespace Ambush.Server
                                         args.physicalId = door.physicalID;
                                         args.state = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
                                         ChangeDoorUI?.Invoke(this, args);
+                                        InvokeTriggerEventArgs args2 = new InvokeTriggerEventArgs();
+                                        args2.physicalID = door.physicalID.ToString();
+                                        
+
                                         /* Save to log & Update Database */
-                                        saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "");
+                                        //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "");
                                         UpdateDbNewState(Constants.Door, currentState, physicalID);
+                                        InvokerTrigger(this, args2);
                                         break;
 
                                     }
@@ -227,11 +230,12 @@ namespace Ambush.Server
                                         saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
                                         if (door != null)
                                         {
-                                            if (door.failCount > 3)
+                                            if (door.failCount < 3)
                                                 door.setDoorState(dir);
                                             else
                                             {
                                                 MessageBox.Show("Door #" + physicalID.ToString() + " is not responding. Please check for errors");
+                                                door.failCount = 0;
                                                 return;
                                             }
                                         }

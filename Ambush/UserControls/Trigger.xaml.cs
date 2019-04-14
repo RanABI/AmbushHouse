@@ -39,7 +39,7 @@ namespace Ambush.UserControls
                     subject = FindName("a" + i.ToString()) as TextBox;
                     string invoke = subject.Text.ToString();
 
-                    string query = "INSERT INTO OnEvent (currentComp,nextComp,nextState) VALUES ('" + triggered + "','" + invoke + "','" + newState.ToString() + "')";
+                    string query = "INSERT INTO OnEvent (currentComp,nextComp,nextState) VALUES ('" + triggered + "','" + invoke + "','" + newState.Text.ToString() + "')";
                     Db_Utils.ExecuteSql(query);
 
                 }

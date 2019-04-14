@@ -108,6 +108,7 @@
     <Compile Include="Client\TCPClient.cs" />
     <Compile Include="Components\Component.cs" />
     <Compile Include="Components\CPX.cs" />
+    <Compile Include="Components\Detector.cs" />
     <Compile Include="Components\Door.cs" />
     <Compile Include="Components\Laser.cs" />
     <Compile Include="Components\MiniController.cs" />
@@ -126,6 +127,18 @@
       <DependentUpon>AdminSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="Timers\BroadcastMessageTimer.cs" />
+    <Compile Include="UserControls\CollapsibleLogEntry.cs" />
+    <Compile Include="UserControls\LogControl.xaml.cs">
+      <DependentUpon>LogControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LogEntry.cs" />
+    <Compile Include="UserControls\LogViewer.xaml.cs">
+      <DependentUpon>LogViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MicroControllerSettings.xaml.cs">
+      <DependentUpon>MicroControllerSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PropertyChangedBase.cs" />
     <Compile Include="UserControls\RPISettingsWindowxaml.xaml.cs">
       <DependentUpon>RPISettingsWindowxaml.xaml</DependentUpon>
     </Compile>
@@ -205,6 +218,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\GameSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LogControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LogViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\MicroControllerSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

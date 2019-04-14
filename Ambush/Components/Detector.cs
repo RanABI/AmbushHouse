@@ -11,9 +11,9 @@ using static Ambush.Enums;
 
 namespace Ambush.Components
 {
-    public class Laser : Component, IProfile
+    public class Detector : Component, IProfile
     {
-        public Laser(int physicalId, int virtualId) : base(virtualId, physicalId,Constants.LS)
+        public Detector(int physicalId,int virtualId) : base(virtualId,physicalId,Constants.DT)
         {
             ServerRequestHandler.InvokerTrigger += Play.invokeTrigger;
         }

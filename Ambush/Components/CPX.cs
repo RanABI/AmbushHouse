@@ -23,10 +23,9 @@ namespace Ambush.Components
             this.components = components;
             this.isOn = true;
             Utils.GlobalEvents.OnIncomingStatsMessage += updateCpxComponentsStatus;
-            //Db_Utils.ExecuteSql("INSERT INTO RPI VALUES ('" + id.ToString() + "','" + ip + "')");
 
         }
-
+        override
         public string ToString()
         {
             StringBuilder builder = new StringBuilder();

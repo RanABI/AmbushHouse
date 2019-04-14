@@ -27,6 +27,13 @@ namespace Ambush.Components
             this.state = Direction.None;
             this.physicalID = physicalID;
         }
+        public Component(int id, int physicalID,string source)
+        {
+            this.source = source;
+            this.virtualID = id;
+            this.state = Direction.None;
+            this.physicalID = physicalID;
+        }
         public Component(int id)
         {
             this.physicalID = id;
@@ -68,9 +75,7 @@ namespace Ambush.Components
             using (TCPClient client = new TCPClient(builder.ToString(), cpx)) { }
 
         }
-
-
-
+        
         override
         public string ToString()
         {

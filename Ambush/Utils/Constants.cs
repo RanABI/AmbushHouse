@@ -30,6 +30,7 @@
         public const string TR = "TR";
         public const string SN = "SN";
         public const string LS = "LS";
+        public const string DT = "DT";
         public const string GET_REPLY = "GET_REPLY";
         public const string SET_REPLY = "SET_REPLY";
         public const string HIT = "HIT";

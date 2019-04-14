@@ -58,11 +58,6 @@ namespace Ambush.Utils
             cPXes = cPxes;
         }
 
-        public static void setMiniControllers(List<MiniController> controlles)
-        {
-            nods = controlles;
-
-        }
         public static MiniController getControllerById(string id)
         {
             foreach (MiniController con in nods)
@@ -121,28 +116,68 @@ namespace Ambush.Utils
             return null;
         }
 
+        public static MiniController getMiniControllerById(string id)
+        {
+            foreach( MiniController con in nods)
+            {
+                if (con.id == id)
+                    return con;
+            }
+            return null;
+        }
+        
         public static void invokeTrigger(object sender, InvokeTriggerEventArgs e)
         {
             var result = GetKey(xTriggeredY, e.physicalID);
             if (result != "")
             {
                 Component cmp = getComponentByPhysicalID(result);
-                if (cmp is Target)
+                if(cmp == null)
                 {
-                    cmp = (Target)cmp;
+                    cmp = GetControllerComponentByPhysicalId(Int32.Parse(result));
+                    if(cmp is Laser)
+                    {
+                        cmp = (Laser)cmp;
+                    }
+                    else if (cmp is Detector)
+                    {
+                        cmp = (Detector)cmp;
+                    }
                     ((IProfile)cmp).Invoke(GetKey(triggeredToState, e.physicalID));
 
+
                 }
-                if (cmp is Components.Door)
+                else
                 {
-                    cmp = (Components.Door)cmp;
-                    ((IProfile)cmp).Invoke(GetKey(triggeredToState, e.physicalID));
+                    if (cmp is Target)
+                    {
+                        cmp = (Target)cmp;
+                        ((IProfile)cmp).Invoke(GetKey(triggeredToState, e.physicalID));
+
+                    }
+                    else if (cmp is Components.Door)
+                    {
+                        cmp = (Components.Door)cmp;
+                        string nextState = GetKey(triggeredToState, result);
+                        ((IProfile)cmp).Invoke(nextState);
+                    }
+                    
                 }
+
             }
         }
         private static string GetKey(IReadOnlyDictionary<string, string> dictValues, string keyValue)
         {
             return dictValues.ContainsKey(keyValue) ? dictValues[keyValue] : "";
+        }
+
+        public static void addController(MiniController con)
+        {
+            nods.Add(con);
+        }
+        public static void setControllers(List<MiniController> cons)
+        {
+            nods = cons;
         }
 
         public static void SetComponentsToDefault()
@@ -165,6 +200,26 @@ namespace Ambush.Utils
 
                 //TODO --> Set Lasers to default values
             }
+        }
+
+        public static Component GetControllerComponentByPhysicalId(int id)
+        {
+            foreach(MiniController con in nods)
+            {
+                if(con.type == Constants.LS)
+                {
+                    foreach (Laser laser in con.lasers)
+                        if (laser.physicalID == id)
+                            return laser;
+                }
+                else if (con.type == Constants.DT)
+                {
+                    foreach (Detector dt in con.detectors)
+                        if (dt.physicalID == id)
+                            return dt;
+                }
+            }
+            return null;
         }
     }
 }

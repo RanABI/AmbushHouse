@@ -26,10 +26,6 @@ namespace Ambush.Components
         //-------------------------------------------------------------------------
 
         DoorClientHandler handler;
-
-
-
-
         public Door(int virtualId, int physicalID) : base(virtualId, physicalID)
         {
             this.source = Constants.DR;

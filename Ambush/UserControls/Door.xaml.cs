@@ -109,27 +109,26 @@ namespace Ambush.UserControls
       
        public void ToggleAfterReceivedMessage(object sender, DoorStateChangeArgs e)
         {
-            UserControls.Door door = null;
-            Application.Current.Dispatcher.Invoke((Action)delegate {
-                DoorSketch d = new DoorSketch();
-                door = d.FindName("door" + e.physicalId.ToString()) as UserControls.Door;  // This is the canvas in your UserControl
+            //UserControls.Door door = null;
+            //Application.Current.Dispatcher.Invoke((Action)delegate {
+            //    DoorSketch d = new DoorSketch();
+            //    door = d.FindName("door" + e.physicalId.ToString()) as UserControls.Door;  // This is the canvas in your UserControl
        
-            });
+            //});
             
-  
-            this.Dispatcher.Invoke(() =>
-            {
+            //this.Dispatcher.Invoke(() =>
+            //{
                 
-                ToggleAllOff();
-                //this.toggels[e.state].Toggle();
-                if (e.state == Direction.Down)
-                    door.DOWN.Toggle();
-                else if (e.state == Direction.Up)
-                    door.UP.Toggle();
-                else if (e.state == Direction.Middle)
-                    door.MIDDLE.Toggle();
+            //    ToggleAllOff();
+            //    //this.toggels[e.state].Toggle();
+            //    if (e.state == Direction.Down)
+            //        door.DOWN.Toggle();
+            //    else if (e.state == Direction.Up)
+            //        door.UP.Toggle();
+            //    else if (e.state == Direction.Middle)
+            //        door.MIDDLE.Toggle();
                 
-            });
+            //});
         }
 
     }

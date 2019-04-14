@@ -60,7 +60,7 @@ namespace Ambush.UserControls
                     }
                 default:
                     {
-                        Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Invalid table given at buildInsertString (RPISettings) " + "\n");
+                        //Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Invalid table given at buildInsertString (RPISettings) " + "\n");
                         Console.WriteLine("Invalid table given at buildInsertString (RPISettings) ");
                         throw new ArgumentException("Invalid table given at buildInsertString (RPISettings) ");
                     }

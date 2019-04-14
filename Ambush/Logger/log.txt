@@ -2762,3 +2762,546 @@
 10-04-201915:06:57 -> Client System.Net.Sockets.TcpClient connected
 10-04-201915:07:26 -> Client System.Net.Sockets.TcpClient connected
 10-04-201916:10:24 -> 10/04/2019 16:10:24 :Door#2 -SET:3:
+14-04-201915:34:40 -> Sending back : AR,D1,160,0
+
+14-04-201915:34:40 -> Sending back : AR,D1,159,0
+
+14-04-201915:34:40 -> Sending back : AR,D1,158,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,157,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,156,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,155,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,154,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,153,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,152,0
+
+14-04-201915:34:41 -> Sending back : AR,D1,151,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,150,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,149,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,148,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,147,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,146,0
+
+14-04-201915:34:42 -> Sending back : AR,D1,145,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,144,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,143,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,142,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,141,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,140,0
+
+14-04-201915:34:43 -> Sending back : AR,D1,139,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,138,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,137,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,136,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,135,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,134,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,133,0
+
+14-04-201915:34:44 -> Sending back : AR,D1,132,0
+
+14-04-201915:34:45 -> Sending back : AR,D1,131,0
+
+14-04-201915:34:45 -> Sending back : AR,D1,130,0
+
+14-04-201915:34:45 -> Sending back : AR,D1,129,0
+
+14-04-201915:34:46 -> Sending back : AR,D1,128,0
+
+14-04-201915:34:46 -> Sending back : AR,D1,127,0
+
+14-04-201915:34:46 -> Sending back : AR,D1,126,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,125,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,124,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,123,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,122,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,121,0
+
+14-04-201915:34:47 -> Sending back : AR,D1,120,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,119,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,118,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,117,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,116,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,115,0
+
+14-04-201915:34:48 -> Sending back : AR,D1,114,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,113,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,112,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,111,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,110,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,109,0
+
+14-04-201915:34:49 -> Sending back : AR,D1,108,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,107,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,106,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,105,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,104,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,103,0
+
+14-04-201915:34:50 -> Sending back : AR,D1,102,0
+
+14-04-201915:34:51 -> Sending back : AR,D1,101,0
+
+14-04-201915:34:52 -> Sending back : AR,D1,100,0
+
+14-04-201915:34:52 -> Sending back : AR,D1,99,0
+
+14-04-201915:34:52 -> Sending back : AR,D1,98,0
+
+14-04-201915:34:53 -> Sending back : AR,D1,97,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,96,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,95,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,94,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,93,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,92,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,91,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,90,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,89,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,88,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,87,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,86,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,85,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,84,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,83,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,82,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,81,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,80,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,79,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,78,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,77,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,76,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,75,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,74,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,73,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,72,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,71,0
+
+14-04-201915:34:54 -> Sending back : AR,D1,70,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,69,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,68,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,67,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,66,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,65,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,64,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,63,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,62,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,61,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,60,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,59,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,58,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,57,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,56,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,55,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,54,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,53,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,52,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,51,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,50,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,49,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,48,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,47,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,46,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,45,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,44,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,43,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,42,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,41,0
+
+14-04-201915:34:55 -> Sending back : AR,D1,40,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,39,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,38,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,37,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,36,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,35,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,34,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,33,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,32,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,31,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,30,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,29,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,28,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,27,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,26,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,25,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,24,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,23,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,22,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,21,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,20,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,19,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,18,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,17,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,16,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,15,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,14,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,13,0
+
+14-04-201915:34:56 -> Sending back : AR,D1,12,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,11,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,10,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,9,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,8,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,7,0
+
+14-04-201915:34:57 -> Sending back : AR,D1,6,0
+
+14-04-201915:34:58 -> Sending back : AR,D1,5,0
+
+14-04-201915:34:58 -> Sending back : AR,D1,4,0
+
+14-04-201915:34:58 -> Sending back : AR,D1,3,0
+
+14-04-201915:34:58 -> Sending back : AR,D1,2,0
+
+14-04-201915:34:59 -> Sending back : AR,D1,1,0
+
+14-04-201915:34:59 -> Sending back : AR,D1,183,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,182,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,181,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,180,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,179,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,178,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,177,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,176,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,175,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,174,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,173,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,172,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,171,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,170,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,169,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,168,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,167,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,166,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,165,0
+
+14-04-201915:35:00 -> Sending back : AR,D1,164,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,163,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,162,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,161,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,160,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,159,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,158,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,157,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,156,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,155,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,154,0
+
+14-04-201915:35:01 -> Sending back : AR,D1,153,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,234,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,232,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,233,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,231,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,228,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,227,0
+
+14-04-201915:42:16 -> Sending back : AR,D1,226,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,225,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,222,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,230,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,224,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,229,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,223,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,221,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,220,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,218,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,217,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,216,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,213,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,215,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,212,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,219,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,214,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,211,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,208,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,207,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,206,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,204,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,210,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,205,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,209,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,200,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,199,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,198,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,203,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,196,0
+
+14-04-201915:42:17 -> Sending back : AR,D1,201,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,197,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,202,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,193,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,192,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,189,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,191,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,195,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,194,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,190,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,188,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,187,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,183,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,182,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,186,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,179,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,184,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,185,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,180,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,181,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,176,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,175,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,174,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,172,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,178,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,173,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,177,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,169,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,168,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,167,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,171,0
+
+14-04-201915:42:18 -> Sending back : AR,D1,165,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,170,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,166,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,164,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,162,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,160,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,161,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,163,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,159,0
+
+14-04-201915:42:19 -> Sending back : AR,D1,156,0
+
+14-04-201915:46:04 -> 14/04/2019 15:46:04 :Door#2 -SET:3:
+14-04-201916:06:14 -> 14/04/2019 16:06:13 :Door#3 -SET:1:
+14-04-201916:10:03 -> 14/04/2019 16:10:01 :Door#3 -SET:1:
+14-04-201916:14:56 -> 14/04/2019 16:14:56 :Door#3 -SET:1:
+14-04-201916:15:45 -> 14/04/2019 16:15:45 :Door#3 -SET:1:
+14-04-201916:16:16 -> 14/04/2019 16:16:16 :Door#3 -SET:1:
+14-04-201916:16:50 -> 14/04/2019 16:16:50 :Door#3 -SET:1:

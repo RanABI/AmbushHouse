@@ -33,7 +33,6 @@ namespace Ambush.Client
             builder.Append((int)dir);
             builder.Append(":");
             builder.Append(physicalID);
-            MessageBox.Show(builder.ToString());
             using (TCPClient client = new TCPClient(builder.ToString(), cpx)) { }
 
         }

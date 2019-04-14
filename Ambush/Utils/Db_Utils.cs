@@ -1,4 +1,5 @@
 ﻿using Ambush.Components;
+using Ambush.UserControls;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,13 @@ namespace Ambush.Utils
 {
     public static class Db_Utils
     {
+        public static MySqlConnection cn_Connection;
         public static Component CheckIfTriggerNeeded(string physicalId)
         {
             string query = "SELECT * FROM OnEvent";
             DataTable dataTable = GetDataTable(query);
+            if (dataTable.Rows.Count == 0)
+                return null;
             foreach (DataRow row in dataTable.Rows)
             {
                 if (physicalId == row.ItemArray[0].ToString())
@@ -33,7 +37,7 @@ namespace Ambush.Utils
 
         public static DataTable GetDataTable(string query) {
             /* Preform SELECT operations */
-            MySqlConnection cn_Connection = GetConnection();
+            cn_Connection = GetConnection();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, cn_Connection);
             adapter.Fill(table);
@@ -68,8 +72,11 @@ namespace Ambush.Utils
         public static MySqlConnection GetConnection()
         {
             /* Get Connection string and connect to DB */
-            MySqlConnection cn_Connection = new MySqlConnection();
-            cn_Connection.ConnectionString = Properties.Settings.Default.connection_string;
+            if(cn_Connection == null)
+            {
+                cn_Connection = new MySqlConnection();
+                cn_Connection.ConnectionString = Properties.Settings.Default.connection_string;
+            }
 
             if (cn_Connection.State != System.Data.ConnectionState.Open)
                 try
@@ -93,18 +100,22 @@ namespace Ambush.Utils
         public static void ExecuteSql(string query)
         {
             /* Execute UPDATE or INSERT operations */
-                  
-            MySqlConnection cn_Connection = GetConnection();
+            try
+            {
+                cn_Connection = GetConnection();
 
-            MySqlCommand cmd = new MySqlCommand(query, cn_Connection);
+                MySqlCommand cmd = new MySqlCommand(query, cn_Connection);
 
-            cmd.ExecuteNonQuery();
-           
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e) { Console.WriteLine("Exception caught @ Db_Utils.ExecuteSql"); }
+
+
         }
 
         public static void CloseConnection()
         {
-            MySqlConnection cn_Connection = GetConnection();
+            cn_Connection = GetConnection();
             cn_Connection.Close();
         }
 
@@ -117,6 +128,8 @@ namespace Ambush.Utils
             Direction dir = Direction.None;
             List<Component> comps = new List<Component>();
             string defaultState;
+            if (dataTable.Rows.Count == 0)
+                return null;
             foreach (DataRow row in dataTable.Rows)
             {
                 //physicalId , virtualId, rpi,state
@@ -127,7 +140,7 @@ namespace Ambush.Utils
                     virtualID = row.ItemArray[1].ToString();
                     dir = Conversions.stringToDirection(row.ItemArray[3].ToString());
                     defaultState = row.ItemArray[4].ToString();
-                    Door door = new Door(Int32.Parse(virtualID), Int32.Parse(physicalID));
+                    Components.Door door = new Components.Door(Int32.Parse(virtualID), Int32.Parse(physicalID));
                     door.defaultState = defaultState;
                     comps.Add(door);
 
@@ -150,6 +163,8 @@ namespace Ambush.Utils
             Sensor sn = null;
             Direction dir;
             string defaultState="";
+            if (dataTable.Rows.Count == 0)
+                return null;
             foreach (DataRow row in dataTable.Rows)
             {
                 //physicalId , virtualId, rpi,state
@@ -185,6 +200,8 @@ namespace Ambush.Utils
             string physicalID = "";
             string virtualID = "";
             string targetId = "";
+            if (dataTable.Rows.Count == 0)
+                return null;
             foreach (DataRow row in dataTable.Rows)
             {
                 //physicalId , virtualId, rpi,state
@@ -211,13 +228,31 @@ namespace Ambush.Utils
             List<CPX> cPXes = Play.cPXes;
             string id = "";
             string ip = "";
-
+            if (dataTable.Rows.Count == 0)
+                return;
             foreach (DataRow row in dataTable.Rows)
             {
                 id = row.ItemArray[0].ToString();
                 ip = row.ItemArray[1].ToString();
                 cPXes.Add(new CPX(Int32.Parse(id), ip, null));
             }
+            Play.setCPXes(cPXes);
+            return;
+        }
+        public static void FillMiniConrollers(DataTable dataTable)
+        {
+            List<MiniController> cons = Play.nods;
+            string id = "";
+            string ip = "";
+            if (dataTable.Rows.Count == 0)
+                return;
+            foreach(DataRow row in dataTable.Rows)
+            {
+                id = row.ItemArray[0].ToString();
+                ip = row.ItemArray[1].ToString();
+                cons.Add(new MiniController(ip,  id));
+            }
+            Play.setControllers(cons);
             return;
         }
 
@@ -253,6 +288,10 @@ namespace Ambush.Utils
                 //Update CPX components
                 Play.setCpxComponents(rpid, comps);
             }
+            query = "SELECT * FROM OnEvent";
+            dataTable = GetDataTable(query);
+            Dictionary<string, string> triggers = FillTriggersDictionary(dataTable);
+            Play.setxTriggeredY(triggers);
             return cPXes;
         }
 
@@ -304,6 +343,65 @@ namespace Ambush.Utils
             Dictionary<string, string> triggers = FillTriggersDictionary(dataTable);
             Play.setxTriggeredY(triggers);
             
+        }
+
+
+        public static List<MiniController> InitControllers()
+        {
+            //List<Laser> lasers = GetLaserList();
+            string query = "SELECT * FROM MiniController";
+
+            DataTable dataTable = Db_Utils.GetDataTable(query);
+            FillMiniConrollers(dataTable);
+            List<MiniController> cons = Play.nods;
+
+            foreach (MiniController con in cons)
+            {
+                query = "SELECT * FROM Laser WHERE controllerID ='" + con.id.ToString() + "'";
+                DataTable data = Db_Utils.GetDataTable(query);
+                if (data.Rows.Count != 0)
+                {
+                    con.type = Constants.LS;
+                    con.setLaserList(GetLaserList(data));
+                }
+                query = "SELECT * FROM Detector WHERE controllerID ='" + con.id.ToString() + "'";
+                data = Db_Utils.GetDataTable(query);
+                if (data.Rows.Count != 0)
+                {
+                    con.type = Constants.DT;
+                    con.setDetectorList(GetDetectorList(data));
+                }
+
+            }
+            return cons;
+        }
+        
+        public static List<Laser> GetLaserList(DataTable data)
+        {
+            string physicalID;
+            string virtualID;
+            List<Laser> lasers = new List<Laser>();
+
+            foreach (DataRow row in data.Rows)
+            {
+                physicalID = row.ItemArray[0].ToString();
+                virtualID = row.ItemArray[1].ToString();
+                lasers.Add(new Laser(Int32.Parse(physicalID), Int32.Parse(virtualID)));
+            }
+            return lasers;
+        }
+        public static List<Detector> GetDetectorList(DataTable data)
+        {
+            string physicalID;
+            string virtualID;
+            List<Detector> det = new List<Detector>();
+            foreach (DataRow row in data.Rows)
+            {
+                physicalID = row.ItemArray[0].ToString();
+                virtualID = row.ItemArray[1].ToString();
+                det.Add(new Detector(Int32.Parse(physicalID), Int32.Parse(virtualID)));
+            }
+            return det;
         }
     }
 }

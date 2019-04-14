@@ -83,8 +83,7 @@ namespace Ambush
 
                 string clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
 
-                //requestHandler.HandleClientRequest(dataReceived);
-                MessageBox.Show(dataReceived);
+                requestHandler.HandleClientRequest(dataReceived);
                 //write back the text to the client
                 Logger.LogHelper.Log(Logger.Logger.LogTarget.File, "Sending back : " + dataReceived + "\n");
                 nwStream.Write(buffer, 0, bytesRead);

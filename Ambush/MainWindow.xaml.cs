@@ -54,7 +54,7 @@ namespace Ambush
             InitializeComponent();
 
             /* Load data from database */
-            //init();
+            init();
 
             /* MainWindow background */
             setBackgroundImage();
@@ -202,6 +202,8 @@ namespace Ambush
             Play game = new Play();
             List<CPX> cPXes = Db_Utils.InitComponents();
             Play.setCPXes(cPXes);
+            List<MiniController> cons = Db_Utils.InitControllers();
+            Play.setControllers(cons);
         }
 
         private void DefaultValues_Click(object sender, RoutedEventArgs e)
@@ -253,6 +255,19 @@ namespace Ambush
 
                 }
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window win2 = new UserControls.MicroControllerSettings();
+            win2.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            List<MiniController> nods = Play.nods;
+            foreach (MiniController con in nods)
+                Console.WriteLine(con.ToString()); 
         }
     }
 
