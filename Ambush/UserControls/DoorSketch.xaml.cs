@@ -1,6 +1,7 @@
 ﻿using Ambush.Client;
 using Ambush.Components;
 using Ambush.CustomEventArgs;
+using Ambush.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,8 +32,11 @@ namespace Ambush.UserControls
         {
             InitializeComponent();
             AssignDoorIds();
+            ServerRequestHandler.ChangeDoorUI += ToggleAfterReceivedMessage;
         }
         
+
+
         private void AssignDoorIds()
         {
             for(int i = 1; FindName("door"+i.ToString()) != null; i++)
@@ -53,6 +57,31 @@ namespace Ambush.UserControls
             //TODO tell client api to open door
             handler.ChangeDoorState(id, state, physicalID);
         }
-       
+
+        public void ToggleAfterReceivedMessage(object sender, DoorStateChangeArgs e)
+        {
+            //UserControls.Door door = null;
+            //Application.Current.Dispatcher.Invoke((Action)delegate {
+            //    DoorSketch d = new DoorSketch();
+            //    door = d.FindName("door" + e.physicalId.ToString()) as UserControls.Door;  // This is the canvas in your UserControl
+
+            //});
+
+            this.Dispatcher.Invoke(() =>
+            {
+                Door door = FindName("door" + e.physicalId.ToString()) as Door;
+                door?.Toggle(e.state);
+                //TODO ---> CHANGE UP AND DOWN
+                
+                //if (e.state == Direction.Down)
+                //    door.DOWN.Toggle();
+                //else if (e.state == Direction.Up)
+                //    door.UP.Toggle();
+                //else if (e.state == Direction.Middle)
+                //    door.MIDDLE.Toggle();
+
+            });
+        }
+
     }
 }

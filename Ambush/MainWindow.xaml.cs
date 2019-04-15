@@ -1,36 +1,16 @@
 ﻿using Ambush.Components;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Ambush.Utils;
-using MySql.Data.MySqlClient;
-using static Ambush.Enums;
-using System.Data;
 using Ambush.UserControls;
 using Ambush.Timers;
-using System.Net;
-using System.Net.Sockets;
 using Ambush.Client;
-using System.Diagnostics;
-using System.Collections;
-using Proxymity.QuickDmx.FtdiUsb;
-using System.Threading;
-using Proxymity.QuickDmx;
 using System.Windows.Threading;
-using System.IO.Ports;
-using Proxymity.QuickDmx.VellemanP8062;
-using System.Windows.Forms;
+using static Ambush.Enums;
 
 namespace Ambush
 {
@@ -58,9 +38,7 @@ namespace Ambush
             init();
 
             /* Start Timers */
-            BroadcastMessageTimer timer = new BroadcastMessageTimer(BroadcasteventTimerInterval);
-            ComponentStateCheckAndUpdateTimer timer2 = new ComponentStateCheckAndUpdateTimer(ComponentseventTimerInterval);
-            UpdateGUITimer timer3 = new UpdateGUITimer(GUIeventTimerInterval);
+            //startTimers();
 
             /* MainWindow background */
             setBackgroundImage();
@@ -145,12 +123,12 @@ namespace Ambush
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Components.Door door = new Components.Door(2, 2, Direction.Middle);
-            //door.setDoorState(Direction.Down);
-            string l = "AR:SRE:D01:10:11111100";
-            string d = "AR:SRE:L01:10:11111100";
-            using (TCPClient client = new TCPClient(l, "192.168.0.28", 8080)) { }
-            using (TCPClient client = new TCPClient(d, "192.168.0.27", 8080)) { }
+            Components.Door door = new Components.Door(2, 2, Direction.Middle);
+            door.setDoorState(Direction.Down);
+            //string l = "AR:SRE:D01:10:11111100";
+            //string d = "AR:SRE:L01:10:11111100";
+            //using (TCPClient client = new TCPClient(l, "192.168.0.28", 8080)) { }
+            //using (TCPClient client = new TCPClient(d, "192.168.0.27", 8080)) { }
         }
 
         private void StopGame_Click(object sender, RoutedEventArgs e)
@@ -203,12 +181,9 @@ namespace Ambush
 
         private void startTimers()
         {
-
-            //EventTimer.Timer =  new System.Timers.Timer(1000 * 5.0); // 60 sec interval
-
-            Timers.ComponentStateCheckAndUpdateTimer timer = new Timers.ComponentStateCheckAndUpdateTimer(eventTimerInterval);
-
-            BroadcastMessageTimer timer2 = new BroadcastMessageTimer(5000.0);
+            BroadcastMessageTimer timer = new BroadcastMessageTimer(BroadcasteventTimerInterval);
+            ComponentStateCheckAndUpdateTimer timer2 = new ComponentStateCheckAndUpdateTimer(ComponentseventTimerInterval);
+            UpdateGUITimer timer3 = new UpdateGUITimer(GUIeventTimerInterval);
         }
 
         private void init()

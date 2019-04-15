@@ -83,65 +83,69 @@ namespace Ambush.Server
             AR:Dxx:SRE:OP_CODE:xxxxxxxx
             ----------------------------------------------------------------
             */
-            if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply && inputs[(int)MsgVars.Action] != Constants.INIT && inputs[(int)MsgVars.Action] != "SER") //Not a broadcast message
+            try
             {
-                currentState = inputs[(int)MsgVars.State];
-                physicalID = Int32.Parse(inputs[(int)MsgVars.PhysicalId]);
-                cpx = Play.getCpxByPhysicalId(physicalID);
-            }
-            else if (inputs[(int)MsgVars.Action].StartsWith("D"))
-            {
-                //Get controller by Id , parse 8-bit message and set lasers state by these values
-                string id = inputs[Constants.Detector_ID].Replace("D", string.Empty);
-                MiniController con = Play.getControllerById(id);
-                switch (inputs[Constants.OP_CODE])
+
+                if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply && inputs[(int)MsgVars.Action] != Constants.INIT && inputs[(int)MsgVars.Action] != "SER") //Not a broadcast message
                 {
-                    /* [AR:Dxx:SRE:OP_CODE:xxxxxxxx] */
+                    currentState = inputs[(int)MsgVars.State];
+                    physicalID = Int32.Parse(inputs[(int)MsgVars.PhysicalId]);
+                    cpx = Play.getCpxByPhysicalId(physicalID);
+                }
+                else if (inputs[(int)MsgVars.Action].StartsWith("D"))
+                {
+                    //Get controller by Id , parse 8-bit message and set lasers state by these values
+                    string id = inputs[Constants.Detector_ID].Replace("D", string.Empty);
+                    MiniController con = Play.getControllerById(id);
+                    switch (inputs[Constants.OP_CODE])
+                    {
+                        /* [AR:Dxx:SRE:OP_CODE:xxxxxxxx] */
 
-                    case Constants.Laser_States:
-                        {
-                            /* Op_Code = 00 */
-
-                            //Dxx --> Detector, 2 bit id 
-                           
-                            byte[] bytes = Encoding.ASCII.GetBytes(inputs[4]);
-                            for (int i = 0; i < bytes.Length; i++)
+                        case Constants.Laser_States:
                             {
-                                var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
-                                if (ans == "1")
-                                    con.detectors[i].isOn = State.ON;
-                                else con.detectors[i].isOn = State.OFF;
-                            }
-                            break;
-                        }
-                    case Constants.Laser_Crossed:
-                        {
-                            /* Op_Code = 11 */
+                                /* Op_Code = 00 */
 
-                            Laser laser = null;
-                            byte[] bytes = Encoding.ASCII.GetBytes(inputs[5]);
-                            for (int i = 0; i < bytes.Length; i++)
-                            {
-                                var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
-                                if (ans == "0")
+                                //Dxx --> Detector, 2 bit id 
+
+                                byte[] bytes = Encoding.ASCII.GetBytes(inputs[4]);
+                                for (int i = 0; i < bytes.Length; i++)
                                 {
-                                    laser = con.getLaserById(i);
-                                    InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
-                                    args.physicalID = laser.physicalID.ToString();
-                                    if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
-                                        InvokerTrigger(this, args);                    
+                                    var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
+                                    if (ans == "1")
+                                        con.detectors[i].isOn = State.ON;
+                                    else con.detectors[i].isOn = State.OFF;
                                 }
+                                break;
                             }
-                            break;
-                        }
-                    default:
-                        {
+                        case Constants.Laser_Crossed:
+                            {
+                                /* Op_Code = 11 */
 
-                            break;
-                        }
+                                Laser laser = null;
+                                byte[] bytes = Encoding.ASCII.GetBytes(inputs[5]);
+                                for (int i = 0; i < bytes.Length; i++)
+                                {
+                                    var ans = System.Text.Encoding.ASCII.GetString(new[] { bytes[i] });
+                                    if (ans == "0")
+                                    {
+                                        laser = con.getLaserById(i);
+                                        InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
+                                        args.physicalID = laser.physicalID.ToString();
+                                        if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
+                                            InvokerTrigger(this, args);
+                                    }
+                                }
+                                break;
+                            }
+                        default:
+                            {
+
+                                break;
+                            }
+                    }
                 }
             }
-
+            catch (Exception e) { }
             switch (inputs[(int)MsgVars.Action])
             {
 
