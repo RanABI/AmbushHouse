@@ -6,31 +6,35 @@
         xmlns:local="clr-namespace:Ambush"
         xmlns:UserControls="clr-namespace:Ambush.UserControls" xmlns:Utils="clr-namespace:Ambush.Utils" x:Class="Ambush.MainWindow"
         mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        
         Title="MainWindow" Height="1172.191" Width="1955.337" >
-    <Grid Background="#FFB3B3B3">
-        <UserControls:DoorSketch HorizontalAlignment="Left" Height="491" Margin="1332,10,-185,0" VerticalAlignment="Top" Width="800"/>
-        <Button x:Name="setTriggers" Content="Set triggers" HorizontalAlignment="Left" Margin="200,171,0,0" VerticalAlignment="Top" Width="103" Height="55" Click="SetTriggers_Click"/>
-        <Button x:Name="RPISettings" Content="RPI settings" HorizontalAlignment="Left" Margin="84,107,0,0" VerticalAlignment="Top" Width="103" Height="54" Click="RPISettings_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="254" Margin="21,41,0,0" VerticalAlignment="Top" Width="339"/>
-        <Label Content="Initiating settings" HorizontalAlignment="Left" Margin="108,66,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="18"/>
-        <UserControls:RPIStatus HorizontalAlignment="Left" Height="98" Margin="21,338,0,0" VerticalAlignment="Top" Width="481" />
-        <Label Content="Select game level" HorizontalAlignment="Left" Margin="629,107,0,0" VerticalAlignment="Top" Width="156" FontSize="16" Height="42"/>
-        <ComboBox Name="GameLevel" HorizontalAlignment="Left" Margin="782,116,0,0" VerticalAlignment="Top" Width="120">
+
+    <Grid >
+        <UserControls:DoorSketch HorizontalAlignment="Left" Height="454" Margin="10,627,0,0" VerticalAlignment="Top" Width="764"/>
+        <Button x:Name="setTriggers" Style="{DynamicResource RoundCorner}"  Content="Set triggers" HorizontalAlignment="Left" Margin="350,142,0,0" VerticalAlignment="Top" Width="172" Height="111" Click="SetTriggers_Click" Foreground="White"/>
+        <Button x:Name="RPISettings" Style="{DynamicResource RoundCorner}" Content="RPI settings" HorizontalAlignment="Left" Margin="132,142,0,0" VerticalAlignment="Top" Width="174" Height="111" Click="RPISettings_Click" Foreground="White"/>
+        <Label Content="Initiating settings" HorizontalAlignment="Left" Margin="181,59,0,0" VerticalAlignment="Top" Height="69" Width="296" FontSize="36" Foreground="White"/>
+        <UserControls:RPIStatus HorizontalAlignment="Left" Height="98" Margin="1414,592,0,0" VerticalAlignment="Top" Width="480" />
+        <Label Content="Select game level" HorizontalAlignment="Left" Margin="1354,158,0,0" VerticalAlignment="Top" Width="392" FontSize="24" Height="90" Foreground="White"/>
+        <ComboBox Name="GameLevel" HorizontalAlignment="Left" Margin="1578,166,0,0" VerticalAlignment="Top" Width="232" RenderTransformOrigin="5.483,3.864" Height="32">
             <ComboBoxItem Content="Easy"/>
             <ComboBoxItem Content="Medium"/>
             <ComboBoxItem Content="Hard"/>
         </ComboBox>
-        <Button x:Name="startGame" Content="Start" HorizontalAlignment="Left" Margin="629,163,0,0" VerticalAlignment="Top" Width="273" Click="StartGame_Click"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="209" Margin="608,94,0,0" VerticalAlignment="Top" Width="318"/>
-        <Label Content="Start new game" HorizontalAlignment="Left" Margin="694,49,0,0" VerticalAlignment="Top" Height="40" Width="156" FontSize="20"/>
-        <TextBox x:Name ="TimerDisplay" HorizontalAlignment="Left" Height="23" Margin="782,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Time elapsed" HorizontalAlignment="Left" Margin="629,235,0,0" VerticalAlignment="Top" Width="119" FontSize="16" Height="42"/>
-        <Button Content="Check" HorizontalAlignment="Left" Margin="833,405,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button x:Name="stopGame" Content="Stop" HorizontalAlignment="Left" Margin="629,192,0,0" VerticalAlignment="Top" Width="273" RenderTransformOrigin="-1.56,0.3" Click="StopGame_Click"/>
-        <Button x:Name="Alert" Content="Alarm" HorizontalAlignment="Left" Margin="593,447,0,0" VerticalAlignment="Top" Width="75" Height="54" Click="Alert_Click" Background="Red" FontSize="16" FontFamily="Showcard Gothic"/>
-        <Button x:Name="defaultValues" Content="     Set default &#xa;component values" HorizontalAlignment="Left" Margin="200,107,0,0" VerticalAlignment="Top" Width="103" Height="54" Click="DefaultValues_Click"/>
-        <Button Content="Controller Settings" HorizontalAlignment="Left" Margin="84,172,0,0" VerticalAlignment="Top" Width="103" Height="54" Click="Button_Click_1"/>
-        <Button Content="Controller To String" HorizontalAlignment="Left" Margin="227,478,0,0" VerticalAlignment="Top" Width="133" Height="70" Click="Button_Click_2"/>
+        <Button x:Name="startGame" Style="{DynamicResource RoundCorner}" Content="Start" HorizontalAlignment="Left" Margin="1354,290,0,0" VerticalAlignment="Top" Width="510" Click="StartGame_Click" Height="48" Foreground="White"/>
+        <Label Content="Start new game" HorizontalAlignment="Left" Margin="1448,46,0,0" VerticalAlignment="Top" Height="106" Width="354" FontSize="48" Foreground="White"/>
+        <TextBox x:Name ="TimerDisplay" HorizontalAlignment="Left" Height="24" Margin="1610,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Time elapsed" HorizontalAlignment="Left" Margin="1448,418,0,0" VerticalAlignment="Top" Width="168" FontSize="24" Height="42" Foreground="White"/>
+        <Button Content="Check" Visibility="Hidden"  HorizontalAlignment="Left" Margin="1008,975,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="stopGame" Style="{DynamicResource RoundCorner}" Content="Stop" HorizontalAlignment="Left" Margin="1354,358,0,0" VerticalAlignment="Top" Width="510" RenderTransformOrigin="-1.56,0.3" Click="StopGame_Click" Height="46" Foreground="White"/>
+        <Button Style="{DynamicResource RedRoundCorner}" x:Name="Alert" Content="PANIC" HorizontalAlignment="Left" Margin="1507,771,0,0" VerticalAlignment="Top" Width="239" Height="145" Click="Alert_Click" Background="Red" FontSize="48" FontFamily="Showcard Gothic"/>
+        <Button x:Name="defaultValues" Style="{DynamicResource RoundCorner}" Content="     Set default &#xa;component values" HorizontalAlignment="Left" Margin="350,286,0,0" VerticalAlignment="Top" Width="172" Height="111" Click="DefaultValues_Click" Foreground="White"/>
+        <Button Content="Controller Settings" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Left" Margin="132,286,0,0" VerticalAlignment="Top" Width="174" Height="111" Click="Button_Click_1" Foreground="White"/>
+        <Button x:Name="Reset" Content="Reset" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Left" Margin="1354,218,0,0" VerticalAlignment="Top" Width="510"  Height="48" Foreground="White"/>
+        <Label Content="RPI Status" HorizontalAlignment="Left" Margin="1545,529,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="2.216,0.552" Foreground="White"/>
+        <Button x:Name="Exit" Content="Exit" Style="{DynamicResource RoundCorner}" HorizontalAlignment="Left" Margin="1542,990,0,0" VerticalAlignment="Top" Width="170" Height="69" FontSize="24" Click="Exit_Click" Foreground="White"/>
     </Grid>
 
 

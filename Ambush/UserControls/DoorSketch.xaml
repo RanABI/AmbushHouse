@@ -5,18 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Ambush.UserControls"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" Width="802">
+             mc:Ignorable="d" Width="756" Height="488">
     <Grid Margin="0,0,206,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Image HorizontalAlignment="Left" Height="462" Margin="0,-12,0,0" VerticalAlignment="Top" Width="594" OpacityMask="Black">
-            <Image.Source>
+            <!--<Image.Source>
 
                 <BitmapImage UriSource="file:///C:/Users/User/Desktop/sketch.png"/>
-            </Image.Source>
+            </Image.Source>-->
         </Image>
         <local:Door x:Name="door1" HorizontalAlignment="Left" Height="67" Margin="9,12,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5">
             <local:Door.RenderTransform>

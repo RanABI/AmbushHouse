@@ -42,7 +42,7 @@ namespace Ambush.Components
         }
         public string constructGetStatusMessage()
         {
-            ////TODO SET RPI SCRIPT ACCORDINGLY
+           
             StringBuilder builder = new StringBuilder();
             builder.Append("AR:GET:CPX:");
             builder.Append(this.id.ToString());

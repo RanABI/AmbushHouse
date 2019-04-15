@@ -18,7 +18,7 @@ namespace Ambush.Utils
 
         public static bool yesNoMessageBox(string msg)
         {
-            return System.Windows.MessageBox.Show(msg, "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No;
+            return System.Windows.MessageBox.Show(msg, "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes;
         }
     }
 }

@@ -40,14 +40,14 @@ namespace Ambush
     /// </summary>
     public partial class MainWindow : Window
     {
-        public readonly string backgroundImagePath = "file://C://Users//User//Downloads//LOGO-AMBUSH.jpg";
+        public readonly string backgroundImagePath = "file://C://Users//User//Pictures//LOGO-AMBUSH.jpg";
         public readonly string splashImage = "/Images/LOGO-AMBUSH.jpg";
         public DateTime date { get; set; }
         public static DispatcherTimer t;
         public static bool isStop;
-        private double eventTimerInterval = 300 * 60.0; // every 60 sec
-
-
+        private double BroadcasteventTimerInterval = 300 * 60.0; // every 60 sec
+        private double ComponentseventTimerInterval = 300 * 60.0; // every 60 sec
+        private double GUIeventTimerInterval = 300 * 60.0; // every 60 sec
         public MainWindow()
         {
 
@@ -56,6 +56,11 @@ namespace Ambush
 
             /* Load data from database */
             init();
+
+            /* Start Timers */
+            BroadcastMessageTimer timer = new BroadcastMessageTimer(BroadcasteventTimerInterval);
+            ComponentStateCheckAndUpdateTimer timer2 = new ComponentStateCheckAndUpdateTimer(ComponentseventTimerInterval);
+            UpdateGUITimer timer3 = new UpdateGUITimer(GUIeventTimerInterval);
 
             /* MainWindow background */
             setBackgroundImage();
@@ -219,7 +224,7 @@ namespace Ambush
         private void DefaultValues_Click(object sender, RoutedEventArgs e)
         {
             
-            if (GeneralUtils.yesNoMessageBox("Are you sure you want to reset default component values?"))
+            if (!GeneralUtils.yesNoMessageBox("Are you sure you want to reset default component values?"))
             {
                 return;
             }
@@ -278,6 +283,17 @@ namespace Ambush
             List<MiniController> nods = Play.nods;
             foreach (MiniController con in nods)
                 Console.WriteLine(con.ToString()); 
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            if (GeneralUtils.yesNoMessageBox("Are you sure you want to exit?"))
+            {
+                Environment.Exit(0);
+
+            }
+                
+            else return;
         }
     }
 

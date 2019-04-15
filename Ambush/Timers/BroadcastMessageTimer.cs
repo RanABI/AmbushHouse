@@ -51,7 +51,7 @@ namespace Ambush.Timers
             {
                 cpxStates[i] = false;
             }
-            Play.setCpxStates(cpxStates);
+            //Play.setCpxStates(cpxStates);
 
             try
             {

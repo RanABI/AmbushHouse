@@ -362,7 +362,7 @@ namespace Ambush.Server
                         //AR: CPX_REPLY: ID:[ARR_VALS]
                         IncomingStatsMessageArgs args = new IncomingStatsMessageArgs(inputs[2], inputs[3].Split('-'));
                         Utils.GlobalEvents.InvokeOnIncomingStatsMessage(this, args);
-                        //TODO ==> Change script to return whole array
+                        //TODO ==> Make sure script returns whole array
 
 
 
