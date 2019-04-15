@@ -17,6 +17,11 @@ namespace Ambush.Components
         {
             ServerRequestHandler.InvokerTrigger += Play.invokeTrigger;
         }
+        public Laser(int physicalId, int virtualId,State state) : base(virtualId, physicalId, Constants.LS)
+        {
+            this.isOn = state;
+            ServerRequestHandler.InvokerTrigger += Play.invokeTrigger;
+        }
 
         public void Invoke(string nextState)
         {

@@ -52,7 +52,7 @@ namespace Ambush
         {
 
             InitializeComponent();
-
+   
 
             /* Load data from database */
             init();

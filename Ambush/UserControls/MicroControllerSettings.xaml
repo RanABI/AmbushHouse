@@ -5,33 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ambush.UserControls"
         mc:Ignorable="d"
-        Title="MicroControllerSettings" Height="415.5" Width="311.5">
-    <Grid Background="#b3b3b3" HorizontalAlignment="Left" Width="318" Margin="0,-25,-14,-2">
-        <Label Content="Set minicontrollers settings" HorizontalAlignment="Left" Margin="49,26,0,0" VerticalAlignment="Top" Height="37" Width="225" FontSize="18"/>
-        <ComboBox Name="type" HorizontalAlignment="Left" Margin="154,72,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Detector"/>
-            <ComboBoxItem Content="Laser"/>
+        Title="MicroControllerSettings" Height="415.5" Width="397.5">
+    <Grid Background="#b3b3b3" Margin="0,-25,-7,-5">
+        <Label Content="Set minicontrollers settings" HorizontalAlignment="Left" Margin="102,23,0,0" VerticalAlignment="Top" Height="37" Width="225" FontSize="18"/>
+        <TextBox Name="c0" HorizontalAlignment="Left" Height="23" Margin="101,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c1" HorizontalAlignment="Left" Height="23" Margin="101,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c2" HorizontalAlignment="Left" Height="23" Margin="101,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c3" HorizontalAlignment="Left" Height="23" Margin="101,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c4" HorizontalAlignment="Left" Height="23" Margin="101,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c5" HorizontalAlignment="Left" Height="23" Margin="101,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c6" HorizontalAlignment="Left" Height="23" Margin="101,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="c7" HorizontalAlignment="Left" Height="23" Margin="101,333,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="134,374,0,0" VerticalAlignment="Top" Width="120" Click="Save_Click"/>
+        <Label Content="#1" HorizontalAlignment="Left" Margin="78,137,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#2" HorizontalAlignment="Left" Margin="78,165,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#3" HorizontalAlignment="Left" Margin="78,193,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#4" HorizontalAlignment="Left" Margin="78,221,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#5" HorizontalAlignment="Left" Margin="78,249,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#6" HorizontalAlignment="Left" Margin="78,277,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#7" HorizontalAlignment="Left" Margin="78,305,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <Label Content="#8" HorizontalAlignment="Left" Margin="78,333,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
+        <TextBox Name="laser_id" HorizontalAlignment="Left" Height="23" Margin="238,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Laser MiniController ID" HorizontalAlignment="Left" Margin="51,96,0,0" VerticalAlignment="Top" Width="152"/>
+        <ComboBox Name="state0" HorizontalAlignment="Left" Margin="238,138,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
         </ComboBox>
-        <Label Content="Select type" HorizontalAlignment="Left" Margin="51,68,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="c0" HorizontalAlignment="Left" Height="23" Margin="102,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c1" HorizontalAlignment="Left" Height="23" Margin="102,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c2" HorizontalAlignment="Left" Height="23" Margin="102,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c3" HorizontalAlignment="Left" Height="23" Margin="102,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c4" HorizontalAlignment="Left" Height="23" Margin="102,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c5" HorizontalAlignment="Left" Height="23" Margin="102,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c6" HorizontalAlignment="Left" Height="23" Margin="102,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="c7" HorizontalAlignment="Left" Height="23" Margin="102,331,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="102,371,0,0" VerticalAlignment="Top" Width="120" Click="Save_Click"/>
-        <Label Content="#1" HorizontalAlignment="Left" Margin="79,135,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#2" HorizontalAlignment="Left" Margin="79,163,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#3" HorizontalAlignment="Left" Margin="79,191,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#4" HorizontalAlignment="Left" Margin="79,219,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#5" HorizontalAlignment="Left" Margin="79,247,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#6" HorizontalAlignment="Left" Margin="79,275,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#7" HorizontalAlignment="Left" Margin="79,303,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <Label Content="#8" HorizontalAlignment="Left" Margin="79,331,0,0" VerticalAlignment="Top" Height="23" Width="23"/>
-        <TextBox Name="conId" HorizontalAlignment="Left" Height="23" Margin="154,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="MiniController ID" HorizontalAlignment="Left" Margin="51,96,0,0" VerticalAlignment="Top" Width="103"/>
-
+        <ComboBox Name="state1" HorizontalAlignment="Left" Margin="238,166,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state2" HorizontalAlignment="Left" Margin="238,194,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state3" HorizontalAlignment="Left" Margin="238,222,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state4" HorizontalAlignment="Left" Margin="238,250,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state5" HorizontalAlignment="Left" Margin="238,278,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state6" HorizontalAlignment="Left" Margin="238,306,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <ComboBox Name="state7" HorizontalAlignment="Left" Margin="238,334,0,0" VerticalAlignment="Top" Width="53">
+            <ComboBoxItem  Content="On"/>
+            <ComboBoxItem Content="Off"/>
+        </ComboBox>
+        <TextBox x:Name="detect_id" HorizontalAlignment="Left" Height="23" Margin="238,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Detector MiniController ID" HorizontalAlignment="Left" Margin="51,65,0,0" VerticalAlignment="Top" Width="170"/>
     </Grid>
 </Window>

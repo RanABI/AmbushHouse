@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static Ambush.Enums;
 
 namespace Ambush.UserControls
 {
@@ -38,46 +39,49 @@ namespace Ambush.UserControls
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            MiniController con = null;
             string query;
-            ComboBox type = FindName("type") as ComboBox;
-            TextBox conId = FindName("conId") as TextBox;
-            if (type.Text.ToString() == "Detector")
-            {
-                con = new MiniController("", new List<Detector>(), conId.Text.ToString(), Constants.DT);
-            }
-            else if (type.Text.ToString() == "Laser")
-            {
-                con = new MiniController("", new List<Laser>(), conId.Text.ToString(), Constants.LS);
-            }
+            TextBox laser_id = FindName("laser_id") as TextBox;
+            TextBox detect_id = FindName("detect_id") as TextBox;
 
-            if (type.Text.ToString() == "" || conId.Text.ToString() == "")
+            MiniController detect_con = new MiniController("", new List<Detector>(), detect_id.Text.ToString(), Constants.DT);
+
+            MiniController laser_con = new MiniController("", new List<Laser>(), laser_id.Text.ToString(), Constants.LS);
+            
+
+            if (laser_id.Text.ToString() == "" || detect_id.Text.ToString() == "")
             {
-                MessageBox.Show("Type and Id must be filled.");
+                MessageBox.Show("Id's must be filled out.");
                 return;
             }
 
             for (int i = 0; FindName("c" + i.ToString()) != null; i++)
             {
                 TextBox physicalId = FindName("c" + i.ToString()) as TextBox;
+                ComboBox state = FindName("state" + i.ToString()) as ComboBox;
+                State st;
+                if (state.Text.ToString() == "On")
+                    st = State.ON;
+                else st = State.OFF;
                 if(physicalId.Text.ToString() != "")
                 {
-                    if(type.Text.ToString() == "Detector")
-                    {
-                        con.detectors.Add(new Detector(Int32.Parse(physicalId.Text.ToString()), i));
-                        query = "INSERT INTO Detector VALUES ('" + physicalId.Text.ToString() + "','" + i.ToString() + "','" + conId.Text.ToString() + "')";
-                        InputToDb(query);
-                    }
-                    else if(type.Text.ToString() == "Laser")
-                    {
-                        con.lasers.Add(new Laser(Int32.Parse(physicalId.Text.ToString()), i));
-                        query = "INSERT INTO Laser VALUES ('" + physicalId.Text.ToString() + "','" + i.ToString() + "','" + conId.Text.ToString() + "')";
-                        InputToDb(query);
-                    }
+                    detect_con.detectors.Add(new Detector(Int32.Parse(physicalId.Text.ToString()), i,st));
+                    query = "INSERT INTO Detector VALUES ('" + physicalId.Text.ToString() + "','" + i.ToString() + "','" + detect_id.Text.ToString() + "','" + Enums.StateToString(st) + "')";
+                    InputToDb(query);
+
+                    laser_con.lasers.Add(new Laser(Int32.Parse(physicalId.Text.ToString()), i,st));
+                    query = "INSERT INTO Laser VALUES ('" + physicalId.Text.ToString() + "','" + i.ToString() + "','" + laser_id.Text.ToString() + "','" + Enums.StateToString(st) + "')";
+                    InputToDb(query);
+                    
                 }
 
             }
-            Play.addController(con);
+            query = "INSERT INTO MiniController VALUES ('" + laser_con.id.ToString() + "','')";
+            InputToDb(query);
+            query = "INSERT INTO MiniController VALUES ('" + detect_con.id.ToString() + "','')";
+            InputToDb(query);
+            Play.AddToDetectorToLaserController(detect_id.Text.ToString(), laser_id.Text.ToString());
+            Play.addController(laser_con);
+            Play.addController(detect_con);
             MessageBox.Show("Database updated successfully");
             this.Close();
 

@@ -17,9 +17,10 @@ namespace Ambush.Utils
         public static bool[] cpxStates;
         public static string gameMode;
         public static int score;
-        public static Dictionary<string,string> xTriggeredY;
-        public static Dictionary<string, string> triggeredToState;
+        public static Dictionary<string,string> xTriggeredY; //X Triggered Y
+        public static Dictionary<string, string> triggeredToState; //Y change to state 
         public static List<Component> defaultValues;
+        public static Dictionary<string, string> DetectorToLaserController; //Detector and laser controller dependencies
         public Play()
         {
             
@@ -33,6 +34,12 @@ namespace Ambush.Utils
         public static void setTriggeredToState(Dictionary<string,string> dict)
         {
             triggeredToState = dict;
+        }
+
+        public static void AddToDetectorToLaserController(string detectorControllerID,string laserControllerID)
+        {
+            DetectorToLaserController.Add(detectorControllerID, laserControllerID);
+            DetectorToLaserController.Add(laserControllerID, detectorControllerID);
         }
 
         public static void setxTriggeredY(Dictionary<string,string> dict)
