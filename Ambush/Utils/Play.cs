@@ -1,4 +1,5 @@
-﻿using Ambush.Components;
+﻿using Ambush.Client;
+using Ambush.Components;
 using Ambush.CustomEventArgs;
 using Ambush.Profiles;
 using Ambush.UserControls;
@@ -23,7 +24,6 @@ namespace Ambush.Utils
         public static Dictionary<string, string> DetectorToLaserController; //Detector and laser controller dependencies
         public Play()
         {
-            
             cPXes = new List<CPX>();
             nods = new List<MiniController>();
             cpxStates  = new bool[6];
@@ -204,8 +204,19 @@ namespace Ambush.Utils
                         target.setTargetState(Conversions.stringToDirection(target.defaultState));
                     }
                 }
+            }
 
-                //TODO --> Set Lasers to default values
+            StringBuilder builder = new StringBuilder();
+            foreach (MiniController con in nods)
+            {
+                con.setType();
+                builder.Clear();
+                builder.Append("AR:SRE:");
+                builder.Append(con.type);
+                builder.Append(con.id.ToString());
+                builder.Append(":");
+                builder.Append(con.default_state_string);
+                using (TCPClient client = new TCPClient(builder.ToString(), con.ip, con.port)) { }
             }
         }
 

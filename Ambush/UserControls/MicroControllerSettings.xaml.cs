@@ -42,7 +42,7 @@ namespace Ambush.UserControls
             string query;
             TextBox laser_id = FindName("laser_id") as TextBox;
             TextBox detect_id = FindName("detect_id") as TextBox;
-
+            string default_con_state = "";
             MiniController detect_con = new MiniController("", new List<Detector>(), detect_id.Text.ToString(), Constants.DT);
 
             MiniController laser_con = new MiniController("", new List<Laser>(), laser_id.Text.ToString(), Constants.LS);
@@ -60,8 +60,15 @@ namespace Ambush.UserControls
                 ComboBox state = FindName("state" + i.ToString()) as ComboBox;
                 State st;
                 if (state.Text.ToString() == "On")
+                {
+                    default_con_state += "1";
                     st = State.ON;
-                else st = State.OFF;
+                }
+                else
+                {
+                    default_con_state += "0";
+                    st = State.OFF;
+                }
                 if(physicalId.Text.ToString() != "")
                 {
                     detect_con.detectors.Add(new Detector(Int32.Parse(physicalId.Text.ToString()), i,st));
@@ -79,9 +86,14 @@ namespace Ambush.UserControls
             InputToDb(query);
             query = "INSERT INTO MiniController VALUES ('" + detect_con.id.ToString() + "','')";
             InputToDb(query);
+
+            laser_con.default_state_string = default_con_state;
+            detect_con.default_state_string = default_con_state;
+            
             Play.AddToDetectorToLaserController(detect_id.Text.ToString(), laser_id.Text.ToString());
             Play.addController(laser_con);
             Play.addController(detect_con);
+
             MessageBox.Show("Database updated successfully");
             this.Close();
 

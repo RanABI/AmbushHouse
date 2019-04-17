@@ -24,6 +24,7 @@ namespace Ambush.UserControls
         Thickness RightSide = new Thickness(0, 0, -59, 0);
         SolidColorBrush Off = new SolidColorBrush(Color.FromRgb(160, 160, 160));
         SolidColorBrush On = new SolidColorBrush(Color.FromRgb(130, 190, 125));
+        SolidColorBrush wait = new SolidColorBrush(Color.FromRgb(235, 244, 66));
         private bool Toggled = false;
 
 
@@ -46,6 +47,10 @@ namespace Ambush.UserControls
             //Toggle();
         }
 
+        public void Wait()
+        {
+            DotBackGround.Fill = wait;
+        }
         public void Toggle()
         {
             if (!Toggled)

@@ -86,7 +86,7 @@ namespace Ambush.Server
             try
             {
 
-                if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply && inputs[(int)MsgVars.Action] != Constants.INIT && inputs[(int)MsgVars.Action] != "SER") //Not a broadcast message
+                if (inputs[(int)MsgVars.Action] != Constants.Broadcast_Reply && inputs[(int)MsgVars.Action] != Constants.INIT && inputs[(int)MsgVars.Action] != "SER")
                 {
                     currentState = inputs[(int)MsgVars.State];
                     physicalID = Int32.Parse(inputs[(int)MsgVars.PhysicalId]);

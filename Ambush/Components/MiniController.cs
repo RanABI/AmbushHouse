@@ -1,4 +1,6 @@
-﻿using Ambush.UserControls;
+﻿using Ambush.Client;
+using Ambush.UserControls;
+using Ambush.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +13,12 @@ namespace Ambush.Components
     {
         public string ip;
         public string id;
+        public string type;
+        public string default_state_string;
         public List<Laser> lasers;
         public List<Detector> detectors;
-        public string type;
         public readonly int port = 8080;
-        //Table microcontroller
+
         public MiniController(string ip,string id)
         {
             this.id = id;
@@ -66,14 +69,24 @@ namespace Ambush.Components
             return null;
         }
 
-        public void turnOnAllLasers()
+        public void setType()
         {
+            if (this.lasers.Count > 0)
+                this.type = "L";
+            else if (this.detectors.Count > 0)
+                this.type = "D";
+        }
+
+        public void allLasersOff()
+        {
+            setType();
             StringBuilder builder = new StringBuilder();
-            builder.Append("AR:SRE:D");
+            builder.Append("AR:SRE:");
+            builder.Append(this.type);
             builder.Append(this.id.ToString());
             builder.Append(":");
-            builder.Append("11111111");
-
+            builder.Append("00000000");
+            using (TCPClient client = new TCPClient(builder.ToString(), this.ip,this.port)) { }
             
         }
 
@@ -104,7 +117,7 @@ namespace Ambush.Components
             return builder.ToString();
         }
 
-
+        
 
 
     }

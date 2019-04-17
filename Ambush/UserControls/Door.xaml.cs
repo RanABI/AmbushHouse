@@ -88,8 +88,11 @@ namespace Ambush.UserControls
 
         private void HandleToggleStateChange(Direction dir)
         {
-            //ToggleAllOff();
-            //toggels[dir].Toggle();
+            this.Dispatcher.Invoke(() =>
+            {
+                this.toggels[dir].Wait();
+                
+            });
             direction = dir;
             DoorStateChangeArgs args = new DoorStateChangeArgs();
             this.doorId = getDoorVirtualId(physicalID);
