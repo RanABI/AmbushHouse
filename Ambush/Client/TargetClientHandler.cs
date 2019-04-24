@@ -21,7 +21,9 @@ namespace Ambush.Components
         //Wait few seconds and turn off led lights
         public void ChangeTargetState(int targetID, Direction newState, int physicalID)
         {//AR:TR:SET:ID:STATE:PHYID
-            CPX cpx = Play.getCpxByPhysicalId(physicalID);
+            Play game = Play.Instance;
+
+            CPX cpx = game.getCpxByPhysicalId(physicalID);
             StringBuilder builder = new StringBuilder();
             builder.Append("TR:");
             builder.Append("SET:");

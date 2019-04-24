@@ -39,6 +39,7 @@ namespace Ambush.UserControls
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            Play game = Play.Instance;
             string query;
             TextBox laser_id = FindName("laser_id") as TextBox;
             TextBox detect_id = FindName("detect_id") as TextBox;
@@ -90,9 +91,9 @@ namespace Ambush.UserControls
             laser_con.default_state_string = default_con_state;
             detect_con.default_state_string = default_con_state;
             
-            Play.AddToDetectorToLaserController(detect_id.Text.ToString(), laser_id.Text.ToString());
-            Play.addController(laser_con);
-            Play.addController(detect_con);
+            game.AddToDetectorToLaserController(detect_id.Text.ToString(), laser_id.Text.ToString());
+            game.addController(laser_con);
+            game.addController(detect_con);
 
             MessageBox.Show("Database updated successfully");
             this.Close();

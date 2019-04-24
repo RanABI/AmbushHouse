@@ -11,6 +11,7 @@ namespace Ambush.Components
 {
     public class Component
     {
+        Play game = Play.Instance;
         public int virtualID { get; set; }
 
         public int physicalID { get; set; }
@@ -42,8 +43,9 @@ namespace Ambush.Components
 
         public void setRequest(Direction newState)
         {
+            
             //Build a string in the correct form of a SET request
-            CPX cpx = Play.getCpxByPhysicalId(this.physicalID);
+            CPX cpx = game.getCpxByPhysicalId(this.physicalID);
 
             StringBuilder builder = new StringBuilder();
             builder.Append("AR:");
@@ -60,7 +62,7 @@ namespace Ambush.Components
         public void getRequest()
         {
             //Build a string in the correct form of a GET request
-            CPX cpx = Play.getCpxByPhysicalId(this.physicalID);
+            CPX cpx = game.getCpxByPhysicalId(this.physicalID);
 
             StringBuilder builder = new StringBuilder();
             builder.Append("AR:");

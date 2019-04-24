@@ -30,8 +30,9 @@ namespace Ambush.Timers
 
         static void checkComponentState(object Sender, System.Timers.ElapsedEventArgs e)
         {
+            Play game = Play.Instance;
             ///CHANGE TO 1 MESSAGE PER CPX
-            List<CPX> cPXes = Play.cPXes;
+            List<CPX> cPXes = game.cPXes;
             foreach (CPX cpx in cPXes)
             {
                 using (TCPClient TcpClient = new TCPClient(cpx.constructGetStatusMessage(), cpx)) { }

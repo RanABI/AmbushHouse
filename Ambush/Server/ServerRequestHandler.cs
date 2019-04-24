@@ -64,6 +64,7 @@ namespace Ambush.Server
 
         public void HandleClientRequest(string dataReceived)
         {
+            Play game = Play.Instance;
             string currentState = "";
             int physicalID = 0;
             CPX cpx = null;
@@ -90,13 +91,13 @@ namespace Ambush.Server
                 {
                     currentState = inputs[(int)MsgVars.State];
                     physicalID = Int32.Parse(inputs[(int)MsgVars.PhysicalId]);
-                    cpx = Play.getCpxByPhysicalId(physicalID);
+                    cpx = game.getCpxByPhysicalId(physicalID);
                 }
                 else if (inputs[(int)MsgVars.Action].StartsWith("D"))
                 {
                     //Get controller by Id , parse 8-bit message and set lasers state by these values
                     string id = inputs[Constants.Detector_ID].Replace("D", string.Empty);
-                    MiniController con = Play.getControllerById(id);
+                    MiniController con = game.getControllerById(id);
                     switch (inputs[Constants.OP_CODE])
                     {
                         /* [AR:Dxx:SRE:OP_CODE:xxxxxxxx] */
@@ -131,7 +132,7 @@ namespace Ambush.Server
                                         laser = con.getLaserById(i);
                                         InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
                                         args.physicalID = laser.physicalID.ToString();
-                                        if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
+                                        if (game.GetKey(game.xTriggeredY, physicalID.ToString()) != "")
                                             InvokerTrigger(this, args);
                                     }
                                 }
@@ -166,12 +167,12 @@ namespace Ambush.Server
 
                                         /*Update Object  */
                                         UpdateDbNewState(Constants.Target, currentState, physicalID);
-                                        target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        target = (Ambush.Components.Target)game.getComponentByPhysicalID(physicalID.ToString());
                                         target.state = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
                                         target.failCount = 0;
                                         /* Invoke next component in case of need */
                                         
-                                        if(Play.GetKey(Play.xTriggeredY,physicalID.ToString()) != "")
+                                        if(game.GetKey(game.xTriggeredY,physicalID.ToString()) != "")
                                         {
                                             InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
                                             args.physicalID = target.physicalID.ToString();
@@ -182,7 +183,7 @@ namespace Ambush.Server
                                     else if (inputs[(int)MsgVars.Answer] == Constants.Failure)
                                     {
                                         /* Retry in case of a failed SET */
-                                        target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        target = (Ambush.Components.Target)game.getComponentByPhysicalID(physicalID.ToString());
                                         Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
                                         //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
                                         if (target != null)
@@ -210,7 +211,7 @@ namespace Ambush.Server
                                     {
 
                                         /*Update Object  */
-                                        door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        door = (Ambush.Components.Door)game.getComponentByPhysicalID(physicalID.ToString());
                                         door.state = Conversions.stringToDirection(currentState);
                                         door.failCount = 0;
                                         CustomEventArgs.DoorStateChangeArgs args = new CustomEventArgs.DoorStateChangeArgs();
@@ -221,7 +222,7 @@ namespace Ambush.Server
                                         /* Save to log & Update Database */
                                         //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "");
                                         UpdateDbNewState(Constants.Door, currentState, physicalID);
-                                        if (Play.GetKey(Play.xTriggeredY, physicalID.ToString()) != "")
+                                        if (game.GetKey(game.xTriggeredY, physicalID.ToString()) != "")
                                         {
                                             InvokeTriggerEventArgs args2 = new InvokeTriggerEventArgs();
                                             args2.physicalID = door.physicalID.ToString();
@@ -234,7 +235,7 @@ namespace Ambush.Server
                                     {
 
                                         /* Retry in case of a failed SET */
-                                        door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
+                                        door = (Ambush.Components.Door)game.getComponentByPhysicalID(physicalID.ToString());
                                         Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
                                         //saveToLog(Constants.Door, physicalID, Constants.SET, currentState, "Set failed. Trying again");
                                         if (door != null)
@@ -268,7 +269,7 @@ namespace Ambush.Server
                                     */
                                     Target target = null;
                                     Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.State]);
-                                    target = (Ambush.Components.Target)Play.getComponentByPhysicalID(physicalID.ToString());
+                                    target = (Ambush.Components.Target)game.getComponentByPhysicalID(physicalID.ToString());
 
                                     if (target != null)
                                     {
@@ -285,7 +286,7 @@ namespace Ambush.Server
 
                                     Components.Door door = null;
                                     Direction dir = Conversions.stringToDirection(inputs[(int)MsgVars.Answer]);
-                                    door = (Ambush.Components.Door)Play.getComponentByPhysicalID(physicalID.ToString());
+                                    door = (Ambush.Components.Door)game.getComponentByPhysicalID(physicalID.ToString());
                                     if (door != null)
                                     {
                                         door.state = dir;
@@ -320,9 +321,9 @@ namespace Ambush.Server
                                 physicalId = row.ItemArray[0].ToString();
                             }
                             /* Add score to player */
-                            Play.score += Int32.Parse(inputs[4]);
+                            game.score += Int32.Parse(inputs[4]);
 
-                            if (Play.GetKey(Play.xTriggeredY, physicalId.ToString()) != "")
+                            if (game.GetKey(game.xTriggeredY, physicalId.ToString()) != "")
                             {
                                 InvokeTriggerEventArgs args = new InvokeTriggerEventArgs();
                                 args.physicalID = physicalId;
@@ -352,7 +353,7 @@ namespace Ambush.Server
                         string query = "UPDATE MiniController SET ip='" + ip + "' WHERE id='" + id + "'";
                         Db_Utils.ExecuteSql(query);
 
-                        MiniController con = Play.getControllerById(id);
+                        MiniController con = game.getControllerById(id);
                         con.ip = ip;
                         break;
                     }

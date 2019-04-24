@@ -16,8 +16,11 @@ namespace Ambush.Utils
     public static class Db_Utils
     {
         public static MySqlConnection cn_Connection;
+
+        
         public static Component CheckIfTriggerNeeded(string physicalId)
         {
+            Play game = Play.Instance;
             string query = "SELECT * FROM OnEvent";
             DataTable dataTable = GetDataTable(query);
             if (dataTable.Rows.Count == 0)
@@ -26,7 +29,7 @@ namespace Ambush.Utils
             {
                 if (physicalId == row.ItemArray[0].ToString())
                 {
-                    Component comp = Play.getComponentByPhysicalID(row.ItemArray[1].ToString());
+                    Component comp = game.getComponentByPhysicalID(row.ItemArray[1].ToString());
                     return comp;
                 }
                 return null;
@@ -225,7 +228,8 @@ namespace Ambush.Utils
 
         public static void FillCPXList(DataTable dataTable)
         {
-            List<CPX> cPXes = Play.cPXes;
+            Play game = Play.Instance;
+            List<CPX> cPXes = game.cPXes;
             string id = "";
             string ip = "";
             if (dataTable.Rows.Count == 0)
@@ -236,12 +240,13 @@ namespace Ambush.Utils
                 ip = row.ItemArray[1].ToString();
                 cPXes.Add(new CPX(Int32.Parse(id), ip, null));
             }
-            Play.setCPXes(cPXes);
+            game.setCPXes(cPXes);
             return;
         }
         public static void FillMiniConrollers(DataTable dataTable)
         {
-            List<MiniController> cons = Play.nods;
+            Play game = Play.Instance;
+            List<MiniController> cons = game.nods;
             string id = "";
             string ip = "";
             if (dataTable.Rows.Count == 0)
@@ -252,19 +257,20 @@ namespace Ambush.Utils
                 ip = row.ItemArray[1].ToString();
                 cons.Add(new MiniController(ip,  id));
             }
-            Play.setControllers(cons);
+            game.setControllers(cons);
             return;
         }
 
         public static List<CPX> InitComponents()
         {
+            Play game = Play.Instance;
             string rpid = "";
 
             //Add CPX objects to CPX list
             string query = "SELECT * FROM RPI";
             DataTable dataTable = Db_Utils.GetDataTable(query);
             FillCPXList(dataTable);
-            List<CPX> cPXes = Play.cPXes;
+            List<CPX> cPXes = game.cPXes;
 
             foreach(CPX cpx in cPXes)
             {
@@ -348,12 +354,13 @@ namespace Ambush.Utils
 
         public static List<MiniController> InitControllers()
         {
+            Play game = Play.Instance;
             //List<Laser> lasers = GetLaserList();
             string query = "SELECT * FROM MiniController";
 
             DataTable dataTable = Db_Utils.GetDataTable(query);
             FillMiniConrollers(dataTable);
-            List<MiniController> cons = Play.nods;
+            List<MiniController> cons = game.nods;
 
             foreach (MiniController con in cons)
             {

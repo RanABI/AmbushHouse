@@ -104,7 +104,8 @@ namespace Ambush.UserControls
 
       public int getDoorVirtualId(int physicalID)
         {
-            CPX currentCPX = Play.getCpxByPhysicalId(physicalID);
+            Play game = Play.Instance;
+            CPX currentCPX = game.getCpxByPhysicalId(physicalID);
             foreach (Component cmp in currentCPX.components)
             { 
                     if(cmp.physicalID == physicalID)

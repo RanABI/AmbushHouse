@@ -16,8 +16,8 @@ namespace Ambush.Client
 
         public void ChangeDoorState(int doorId, Direction dir,int physicalID)
         {//AR:SET:DR:VIRTUALID:DIR:PHYSID
-
-            CPX cpx = Play.getCpxByPhysicalId(physicalID);
+            Play game = Play.Instance;
+            CPX cpx = game.getCpxByPhysicalId(physicalID);
 
             if (doorId == 4 || doorId == 8 || doorId == 13 || doorId == 18)
             {

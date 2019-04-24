@@ -51,10 +51,11 @@ namespace Ambush.Components
 
         public void updateCpxComponentsStatus(object sender, IncomingStatsMessageArgs e)
         {
+            Play game = Play.Instance;
             string[] states = e.values;
             string id = e.cpxID;
-            List<CPX> cPXes = Play.cPXes;
-            CPX cpx = Play.getCpxByPhysicalId(Int32.Parse(id));
+            List<CPX> cPXes = game.cPXes;
+            CPX cpx = game.getCpxByPhysicalId(Int32.Parse(id));
             int i = 0;
             foreach (Component cmp in cpx.components)
             {

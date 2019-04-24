@@ -46,7 +46,8 @@ namespace Ambush.Timers
 
         static void BroadcastMessage(object Sender, System.Timers.ElapsedEventArgs e)
         {
-            bool[] cpxStates = Play.cpxStates;
+            Play game = Play.Instance;
+            bool[] cpxStates = game.cpxStates;
             for (int i = 0; i < cpxStates.Length; i++)
             {
                 cpxStates[i] = false;

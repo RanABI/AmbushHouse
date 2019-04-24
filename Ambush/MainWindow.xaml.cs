@@ -188,24 +188,24 @@ namespace Ambush
 
         private void init()
         {
-            Play game = new Play();
+            Play game = Play.Instance;
             List<CPX> cPXes = Db_Utils.InitComponents();
-            Play.setCPXes(cPXes);
+            game.setCPXes(cPXes);
             List<MiniController> cons = Db_Utils.InitControllers();
-            Play.setControllers(cons);
-            Play.score = 0;
+            game.setControllers(cons);
+            game.score = 0;
         }
 
         private void DefaultValues_Click(object sender, RoutedEventArgs e)
         {
-            
+            Play game = Play.Instance;
             if (!GeneralUtils.yesNoMessageBox("Are you sure you want to reset default component values?"))
             {
                 return;
             }
             else
             {
-                List<CPX> cpxes = Play.cPXes;
+                List<CPX> cpxes =   game.cPXes;
                 foreach (CPX cpx in cpxes)
                 {
                     foreach (Component cmp in cpx.components)
@@ -232,7 +232,7 @@ namespace Ambush
                     }
                 }
 
-                List<MiniController> nods = Play.nods;
+                List<MiniController> nods = game.nods;
                 foreach(MiniController con in nods)
                 {
                     foreach (Laser laser in con.lasers)
@@ -255,7 +255,8 @@ namespace Ambush
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            List<MiniController> nods = Play.nods;
+            Play game = Play.Instance;
+            List<MiniController> nods = game.nods;
             foreach (MiniController con in nods)
                 Console.WriteLine(con.ToString()); 
         }
